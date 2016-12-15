@@ -1,0 +1,92 @@
+<script>
+    $(document).ready(function(){
+        $('table[id^=info-]').hide();
+        $('#info-0').show();
+        $('#type_select').change(function(){
+            $('table[id^=info-]').hide();
+            $('#info-'+$('#type_select').val()).show();
+        });
+    });
+</script>
+<div class="container">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="span3">
+            <ul class="nav nav-list">
+                <li>
+                    <a href="dashboard">Dashboard</a>
+                </li>
+                <li>
+                    <a href="latestProducts">昨日商品列表</a>
+                </li>
+                <li>
+                    <a href="sendMessage">发送信息</a>
+                </li>
+                <li>
+                    <a href="feedbacks">反馈管理</a>
+                </li>
+                <li>
+                    <a href="settings">参数设置</a>
+                </li>
+            </ul>
+        </div>
+        <div class="span9">
+            <h3>
+                Dashboard
+            </h3>
+            <select id="type_select" name="type_select" class="form-control">
+                <option value="0">全部信息</option>
+                <volist name="categories" id="item">
+                    <option value="{$i}">{$item['name']}</option>
+                </volist>
+            </select>
+            <table class="table" id="info-0">
+                <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>发布商品数</th>
+                    <th>提交求购数</th>
+                    <th>达成交易数</th>
+                    <th>取消求购数</th>
+                    <th>新用户数</th>
+                </tr>
+                </thead>
+                <volist name="countByDay" id="vo">
+                    <tbody>
+                    <tr class="success">
+                        <td>{$vo['date']}</td>
+                        <td>{$vo['release']}</td>
+                        <td>{$vo['release_order'][0]}</td>
+                        <td>{$vo['deal_order'][0]}</td>
+                        <td>{$vo['cancel_order'][0]}</td>
+                        <td>{$vo['new_user']}</td>
+                    </tr>
+                    </tbody>
+                </volist>
+            </table>
+            <volist name="categories" id="vo">
+                <table class="table" id="info-{$i}">
+                    <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>提交求购数</th>
+                        <th>达成交易数</th>
+                        <th>取消求购数</th>
+                    </tr>
+                    </thead>
+                    <volist name="countByDay" id="vo" key="j">
+                        <tbody>
+                        <tr class="success">
+                            <td>{$vo['date']}</td>
+                            <td>{$vo['release_order'][$i]}</td>
+                            <td>{$vo['deal_order'][$i]}</td>
+                            <td>{$vo['cancel_order'][$i]}</td>
+                        </tr>
+                        </tbody>
+                    </volist>
+                </table>
+            </volist>
+        </div>
+    </div>
+</div>

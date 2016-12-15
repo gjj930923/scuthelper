@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>http://100.scuthelper.sinaapp.com/weibo_login.png

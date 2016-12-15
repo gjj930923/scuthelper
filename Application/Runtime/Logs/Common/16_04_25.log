@@ -1,0 +1,2310 @@
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:01+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:14+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:14+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:14+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.032002s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039002s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:14+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:14+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:14+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:15+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:15+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:15+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:15+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:15+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:01:15+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:40+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:40+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:40+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:40+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:40+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.055003s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:40+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:41+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:41+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:41+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:41+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:41+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.013001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:02:41+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:14+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:14+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:14+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:14+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:14+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:14+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:15+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:15+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:15+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:15+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:15+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:03:15+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:05+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:05+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:05+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:05+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:05+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:05+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:06+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:06+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:06+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:06+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:06+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:06+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:32+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:32+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:32+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:32+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:32+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:32+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:33+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:33+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:33+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:33+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:33+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:04:33+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:02+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:02+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:02+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:02+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031002s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:02+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:02+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:03+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:03+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:03+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:03+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:03+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:06:03+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:06+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:06+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:06+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:06+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:06+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:06+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:07+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:07+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:07+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:07+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:07+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:07+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:56+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:56+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:56+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:56+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:56+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.048003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048003s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:56+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:57+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.013001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022002s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:57+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:57+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:57+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:57+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:10:57+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:18+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:18+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:18+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:18+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:18+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:18+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:19+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:19+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:19+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:19+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046003s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:19+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:11:19+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:05+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:05+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030002s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:06+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:36+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:36+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:36+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:36+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:36+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:36+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:37+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:37+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:37+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:37+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:37+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:14:37+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:41+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:41+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:41+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:41+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.011001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:41+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:41+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:42+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:42+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:42+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:42+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:42+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:26:42+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:41+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:41+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:41+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:41+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:41+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:41+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:42+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:42+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:42+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:42+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:42+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:42+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:57+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:57+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:57+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:57+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:57+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:57+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:58+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:58+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:58+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:58+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:58+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:27:58+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:19+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:19+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:19+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:19+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036002s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:19+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:19+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:20+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:20+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:20+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:20+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.009001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:20+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:20+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:42+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:42+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:42+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:42+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:42+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:42+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:43+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:43+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:43+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:43+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.023001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031002s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:43+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T00:28:43+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:19+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:19+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:19+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:19+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:19+08:00 ] ::1 /scuthelper/3/market/Application/Home/View/Image/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:19+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:19+08:00 ] ::1 /scuthelper/3/market/Application/Home/View/Image/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:43+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T22:59:43+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:00:01+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:00:01+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:00:01+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:00:01+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:00:01+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:00:01+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:02+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:02+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:02+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:02+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:02+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:02+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.010000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:03+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:19+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:19+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:19+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:19+08:00 ] ::1 /scuthelper/3/market/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:19+08:00 ] ::1 /scuthelper/3/market/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:03:19+08:00 ] ::1 /scuthelper/3/market/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:08:25+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:08:25+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:08:25+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:11:47+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:11:47+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:11:47+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:11:48+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:11:48+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:11:48+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:17:28+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:17:28+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:17:28+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:17:29+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:17:29+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:17:29+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:22:31+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:22:31+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:22:31+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:22:32+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:22:32+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:22:32+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:23:56+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:23:56+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:23:56+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:23:56+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:23:56+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:23:56+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:24:37+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:24:37+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:24:37+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:24:38+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:24:38+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:24:38+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:14+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:14+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:14+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:14+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:14+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:14+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:18+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:18+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:18+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:18+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:18+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:27:18+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:30:58+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:30:58+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:30:58+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:30:59+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:30:59+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:30:59+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:32:04+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:32:04+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:32:04+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:32:04+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:32:04+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:32:04+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:33:26+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:33:26+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:33:26+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:33:28+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:33:28+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:33:28+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:34:02+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:34:02+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:34:02+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:34:02+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:34:02+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:34:02+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:47+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:47+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:47+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:47+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:47+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:47+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:56+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:56+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:56+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:56+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:56+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:45:56+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:32+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:32+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:32+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:33+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:33+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:33+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:52+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:52+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:52+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:53+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:53+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:46:53+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:51:08+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:51:08+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:51:08+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:51:08+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:51:08+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:51:08+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:52:02+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:52:02+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:52:02+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:52:02+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:52:02+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:52:02+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:53:04+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:53:04+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:53:04+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:53:05+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:53:05+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:53:05+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:01+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:01+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:01+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:02+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:02+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:02+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:55+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:55+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:56+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:56+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:56+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:54:56+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:12+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:12+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:12+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:13+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:13+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:13+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:49+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:49+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:49+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:50+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:50+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:56:50+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:10+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:10+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:10+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:11+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:11+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:11+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:22+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:22+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:22+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:23+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:23+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:23+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:32+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:32+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:32+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:33+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:33+08:00 ] ::1 /scuthelper/3/market/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+
+[ 2016-04-25T23:59:33+08:00 ] ::1 /scuthelper/3/market/img/a_002.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Market
+

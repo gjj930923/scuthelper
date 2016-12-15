@@ -1,0 +1,25 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="container">
+    <div class="row">
+        <div class="span12">
+            <form class="form-horizontal" method="post" action="loginCertify">
+                <div class="control-group">
+                    <label class="control-label" for="admin" required>管理员账户</label>
+                    <div class="controls">
+                        <input id="admin" name="admin" type="text" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="password" required>密码</label>
+                    <div class="controls">
+                        <input id="password" name="password" type="password" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button class="btn" type="submit">登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

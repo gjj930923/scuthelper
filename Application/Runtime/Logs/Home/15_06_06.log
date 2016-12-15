@@ -1,0 +1,42 @@
+[ 2015-06-06T17:40:51+08:00 ] 127.0.0.1 /scuthelper/3/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009946s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] Undefined variable: category D:\wamp\Web\scuthelper\3\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 463 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.051244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.051414s ]
+
+[ 2015-06-06T23:41:14+08:00 ] 127.0.0.1 /scuthelper/3/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined variable: category D:\wamp\Web\scuthelper\3\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 463 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009836s ]
+

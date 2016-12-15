@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <div class="span12">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <ul class="nav nav-list">
+                <li>
+                    <a href="dashboard">Dashboard</a>
+                </li>
+                <li>
+                    <a href="latestProducts">昨日商品列表</a>
+                </li>
+                <li>
+                    <a href="sendMessage">发送信息</a>
+                </li>
+                <li>
+                    <a href="feedbacks">反馈管理</a>
+                </li>
+                <li>
+                    <a href="settings">参数设置</a>
+                </li>
+            </ul>
+        </div>
+        <div class="span4">
+            <h3>
+                前一日商品列表
+            </h3>
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <label>标题</label><input type="text" value="{$title}"/>
+                </div>
+                <div class="control-group">
+                    <label>摘要</label><input type="text" value="{$abstract}"/>
+                </div>
+                <div class="control-group">
+                    <label>原文链接</label><input type="text" value="http://scuthelper.sinaapp.com"/>
+                </div>
+                <div class="control-group">
+                    <label>作者</label><input type="text" value="更多二手商品："/>
+                </div>
+            </form>
+        </div>
+        <div class="span4">
+            {$content}
+        </div>
+    </div>
+</div>

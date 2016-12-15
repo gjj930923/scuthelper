@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <link rel="stylesheet" href="../css/amazeui.datetimepicker.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/amazeui.js"></script>
+    <script src="../js/amazeui.datetimepicker.min.js"></script>
+    <script src="../js/amazeui.widgets.helper.min.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+        $('.am-gallery-item:gt(1)').hide();
+        $('#delete_favorite').hide();
+        $('#order_success_alert').hide();
+        $('#order_form').hide();
+        <if condition="$user_info neq null">
+            $.post("isFavorite",{
+            user_id:'{$user_info.user_id}',
+            product_id:'{$product.product_id}'
+        },function(data,status){
+            if(data == "1"){
+            $('#add_favorite').hide();
+            $('#delete_favorite').show();
+        }
+        });
+        </if>
+
+        $('#add_favorite,#delete_favorite').click(function(){
+            <if condition="$user_info neq null">
+                $.post("modifyFavorite",{
+                user_id:'{$user_info.user_id}',
+                product_id:'{$product.product_id}'
+            },function(data,status){
+                if(data == "0"){
+                $('#add_favorite').hide();
+                $('#delete_favorite').show();
+            }
+                else if(data == "1"){
+                $('#add_favorite').show();
+                $('#delete_favorite').hide();
+            }
+            });
+                <else/>
+                window.location.href="login?redirect_url=/market/product?product_id={$product.product_id}";
+            </if>
+        });
+
+        $('[id^=tab-]').click(function(){
+            var id = $(this).attr('id').replace('tab-','');
+            $('[id^=tab-]').removeClass(' am-active');
+            $(this).addClass('am-active');
+            $('.am-tab-panel').removeClass(' am-active');
+            $('div[data-tab-panel-'+id+'=""]').addClass('am-active');
+        });
+        
+        $('#add_question').click(function(){
+            $.post("addQuestion",{
+                user_id:'{$user_info.user_id}',
+                product_id:'{$product.product_id}',
+                content:$('#description').val()
+            },function(data){
+                switch(data){
+                    case "-1":
+                        $.weui.alert('商品已被删除',{title:'提示'});
+                        break;
+                    case "-2":
+                        $.weui.alert('商品不存在',{title:'提示'});
+                        break;
+                    case "-3":
+                        $.weui.alert('问题内容不得为空',{title:'提示'});
+                        break;
+                    case "-5":
+                        $.weui.alert('问题添加失败',{title:'提示'});
+                        break;
+                    case "0":
+                        $.weui.alert('问题添加成功，请等待卖家回复，谢谢！',{title:'提示'});
+                        $('#description').siblings().hide();
+                        $('#description,#add_question').hide();
+                        break;
+                }
+            });
+        });
+
+        $('#address_selection').change(function () {
+            if($(this).val() == 1){
+                $('#address1').val('{$user_address1}');
+                $('#address2').val('{$user_info.address2}');
+                $('#buyer_note').focus();
+            }
+            else if($(this).val() == 2){
+                $('#address1').val('{$seller_address1}');
+                $('#address2').val('{$seller.address2}');
+                $('#buyer_note').focus();
+            }
+            else{
+                $('#address1').val('').focus();
+                $('#address2').val('');
+            }
+        });
+
+        $('#add_order').click(function(){
+            <if condition="$user_info neq null">
+                $(this).hide();
+                $('#order_form').show();
+            <else/>
+                window.location.href="login?redirect_url=/market/product?product_id={$product.product_id}";
+            </if>
+        });
+
+        $('#order_cancel').click(function(){
+            $('#add_order').show();
+            $('#order_form').hide();
+        });
+
+        $('#submit_order').click(function(){
+            $.post("addOrder",{
+                user_id:'{$user_info.user_id}',
+                product_id:'{$product.product_id}',
+                quantity:$('#quantity').val(),
+                payment_amount:$('#payment_amount').val(),
+                expect_exchange_time:$('#expect_exchange_time').val(),
+                buyer_note:$('#buyer_note').val(),
+                address1:$('#address1').val(),
+                address2:$('#address2').val()
+            },function(data){
+                switch(data){
+                    case "-1":
+                        $.weui.alert("商品不存在");
+                        break;
+                    case "-2":
+                        $.weui.alert("商品库存不足");
+                        break;
+                    case "-3":
+                        $.weui.alert("交易时间不得早于当前时间");
+                        break;
+                    case "-4":
+                        $.weui.alert("该商品的卖家不得购买此商品");
+                        break;
+                    case "-5":
+                        $.weui.alert("商品数量必须大于0且为整数！");
+                        break;
+                    case "0":
+                        $('#add_order').hide();
+                        $('#order_form').hide();
+                        $('#order_success_alert').show();
+                        break;
+                    default:
+                }
+            })
+        });
+
+        //地址提示功能的操作绑定
+        $('[id^=address_list-]').hide();
+        $('[id^=address_list-]').click(function(){
+            $('#address1').val($(this).html());
+            $('[id^=address_list-]').hide();
+        });
+        $('#address1').bind('input propertychange', function() {
+            var value = $(this).val();
+            if(value){
+                $.post('getAddresses', {}, function (data) {
+                    var num = 1;
+                    $('[id^=address_list-]').hide();
+                    var i;
+                    for(i in data){
+                        if(num <= 6 && data[i].indexOf(value) > -1){
+                            //$('#result').append(value);
+                            $('#address_list-'+num).show();
+                            $('#address_list-'+num).html(data[i]);
+                            num++;
+                        }
+                    }
+                });
+            }
+            else{
+                $('[id^=address_list-]').hide();
+            }
+        });
+        $('#expect_exchange_time').datetimepicker({
+            format: 'yyyy-mm-dd hh:ii',
+            autoclose:true
+        });
+    });
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;padding-top: 40px;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<article class="weui_article">
+    <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }" >
+        <volist name="pictures" id="vo">
+        <li>
+            <div class="am-gallery-item">
+                <a href="http://s.amazeui.org/media/i/demos/bing-1.jpg" class="">
+                    <img src="{$vo['url']}/carousal" />
+                </a>
+            </div>
+        </li>
+        </volist>
+    </ul>
+    <h2>点击图片可查看大图，总共{$pictures|count}张。</h2>
+    <p><strong>{$product.min_price}元<if condition="$product['min_price'] + 0.01 lt $product['max_price']">-{$product.max_price}元</if></strong></p>
+    <p><switch name="product.fineness">
+        <case value="1">七成新以下</case>
+        <case value="2">七成新</case>
+        <case value="3">八成新</case>
+        <case value="4">九成新</case>
+        <case value="5">九五成新</case>
+        <case value="6">全新</case>
+        <default />未知
+    </switch>
+        | 余量{$product['quantity'] - $product['quantity_sold']}
+        | 来自<switch name="product.source">
+            <case value="1">网购</case>
+            <case value="2">代购</case>
+            <case value="3">海淘</case>
+            <case value="4">线下商店</case>
+            <case value="5">奖赠活动</case>
+            <case value="6">其他渠道</case>
+            <default />未知渠道
+        </switch>
+        <br> {$product.time} 发布 <br> {$product.modify_time} 更新
+    </p>
+    <if condition="$user_info['user_id'] neq $product['user_id']">
+        <strong id="order_success_alert">
+            发起求购成功！
+        </strong>
+        <a href="javascript:void(0);" class="weui_btn weui_btn_primary" id="add_order" name="add_order">求购</a>
+        <div id="order_form">
+            <div class="weui_cells_title">求购信息</div>
+            <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">可接受价格</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="tel" value="{$product.min_price}" id="payment_amount" name="payment_amount" required>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">数量</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="number" value="1" id="quantity" name="quantity" required>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">交易时间</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input am-form-field" type="text" id="expect_exchange_time" name="expect_exchange_time" required readonly placeholder="点击选择日期">
+                    </div>
+                </div>
+                <div class="weui_cell weui_cell_select weui_select_after">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">交易地点</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <select class="weui_select"  id="address_selection" name="address_selection">
+                            <option value="1">您的地址</option>
+                            <option value="2">卖方地址</option>
+                            <option value="0" selected>其他地址</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">楼栋</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="tel" placeholder="可在“交易地点”直接选择" id="address1" name="address1" required>
+                    </div>
+                </div>
+                <div class="button_sp_area">
+                    <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-1">按钮</a>
+                    <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-2">按钮</a>
+                    <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-3">按钮</a>
+                    <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-4">按钮</a>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">房间</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="tel" placeholder="选填" id="address2" name="address2">
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">备注信息</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <textarea class="weui_textarea" placeholder="选填" rows="2"></textarea>
+                        <div class="weui_textarea_counter"><span>限40字内</span></div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="weui_btn weui_btn_primary" id="submit_order" name="submit_order">提交求购</a>
+                <a href="javascript:void(0);" class="weui_btn weui_btn_default" id="order_cancel">取消求购</a>
+            </div>
+        </div>
+        <a href="" class="weui_btn weui_btn_warn" id="add_favorite" name="add_favorite">收藏</a>
+        <a href="" class="weui_btn weui_btn_default" id="delete_favorite" name="delete_favorite">取消收藏</a>
+    <elseif condition="$product['quantity'] - $product['quantity_sold'] elt 0"/>
+        <strong>
+            商品已售罄，不得收藏或求购
+        </strong>
+    <else/>
+        <strong>
+            商品拥有者不得收藏或求购
+        </strong>
+    </if>
+    <div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+        <ul class="am-tabs-nav am-cf">
+            <li class="am-active" id="tab-0">商品详情</li>
+            <li class="" id="tab-1">卖家详情</li>
+            <li class="" id="tab-2">商品问答</li>
+            <li class="" id="tab-3">相关推荐</li>
+            <li class="" id="tab-4">看了又看</li>
+        </ul>
+        <div class="am-tabs-bd">
+            <div data-tab-panel-0 class="am-tab-panel am-active">
+                {$product.description}
+            </div>
+            <div data-tab-panel-1 class="am-tab-panel ">
+                <div class="weui_cells weui_cells_form" style="margin: 0px;">
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">昵称</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="{$seller.nickname}" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">真实姓名</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="{$seller.real_name}" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">性别</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="
+<switch name='seller.sex' ><case value='0'>未设置</case><case value='1'>男</case><case value='2'>女</case><case value='3'>保密</case></switch>" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">校区</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="{$seller.campus_name}" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">学院</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="{$seller.school_name}" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">宿舍地址</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="{$seller.address_name}" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">学历或职位</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="
+<switch name='seller.education'><case value='0'>本科</case><case value='1'>硕士</case><case value='2'>博士</case><case value='3'>教职工</case><default />其他</switch>" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">邮箱</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="仅发起求购后可见" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">QQ</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="仅发起求购后可见" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">联系方式</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="仅发起求购后可见" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">注册日期</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="{$seller.create_time}" disabled>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">上次登录日期</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" value="{$seller.last_login_time}" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-tab-panel-2 class="am-tab-panel ">
+                <div class="weui_cell">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <textarea class="weui_textarea" placeholder="在此填写提问内容" rows="2" id="description" name="description"></textarea>
+                        <div class="weui_textarea_counter"><span>50字以内</span></div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="weui_btn weui_btn_primary" id="add_question" name="add_question">提问</a>
+                <div class="weui_panel weui_panel_access">
+                    <volist name="q_and_a" id="vo">
+                        <div class="weui_panel_bd">
+                            <div class="weui_media_bd">
+                                <h4 class="weui_media_title"><strong>Q：{$vo.question}</strong></h4>
+                                <p class="weui_media_desc">A：{$vo.answer}</p>
+                            </div>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+            <div data-tab-panel-3 class="am-tab-panel ">
+                <volist name="similar_products" id="vo" empty="以后会有的……">
+                    <a class="weui_media_box weui_media_appmsg" href="/market/product?product_id={$vo['product_id']}">
+                        <div class="weui_media_hd">
+                            <img class="weui_media_appmsg_thumb" src="{$vo['url']}/square.140" alt="">
+                        </div>
+                        <div class="weui_media_bd">
+                            <h4 class="weui_media_title">{$vo.name}</h4>
+                            <p class="weui_media_desc">{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> | 数量 {$vo['quantity'] - $vo['quantity_sold']} |
+                                <switch name="vo.fineness">
+                                    <case value="1">七成新以下</case>
+                                    <case value="2">七成新</case>
+                                    <case value="3">八成新</case>
+                                    <case value="4">九成新</case>
+                                    <case value="5">九五成新</case>
+                                    <case value="6">全新</case>
+                                    <default />新旧未知
+                                </switch>
+                            </p>
+                        </div>
+                    </a>
+                </volist>
+            </div>
+            <div data-tab-panel-4 class="am-tab-panel ">
+                <volist name="same_category_product" id="vo" empty="很快会有的……">
+                    <a class="weui_media_box weui_media_appmsg" href="/market/product?product_id={$vo['product_id']}">
+                        <div class="weui_media_hd">
+                            <img class="weui_media_appmsg_thumb" src="{$vo['url']}/square.140" alt="">
+                        </div>
+                        <div class="weui_media_bd">
+                            <h4 class="weui_media_title">{$vo.name}</h4>
+                            <p class="weui_media_desc">{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> | 数量 {$vo['quantity'] - $vo['quantity_sold']} |
+                                <switch name="vo.fineness">
+                                    <case value="1">七成新以下</case>
+                                    <case value="2">七成新</case>
+                                    <case value="3">八成新</case>
+                                    <case value="4">九成新</case>
+                                    <case value="5">九五成新</case>
+                                    <case value="6">全新</case>
+                                    <default />新旧未知
+                                </switch>
+                            </p>
+                        </div>
+                    </a>
+                </volist>
+            </div>
+        </div>
+    </div>
+</article>
+</body>
+</html>

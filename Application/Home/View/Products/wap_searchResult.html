@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+        getBranchCategory($('#category').val());
+        $('#page').change(function(){
+            window.location.href = window.location.href+"&page="+$('#page').val();
+        });
+        $('#category').change(function(){
+            getBranchCategory($(this).val());
+        });
+        $('.weui_cells_form .weui_cell:gt(0)').hide();
+        $('#show_details').click(function(){
+            $('.weui_cells_form .weui_cell:gt(0)').show(300);
+            $(this).hide();
+            $('#hide_details').show();
+        });
+        $('#hide_details').click(function(){
+            $('.weui_cells_form .weui_cell:gt(0)').hide(300);
+            $(this).hide();
+            $('#show_details').show();
+        }).hide();
+    });
+
+    function getBranchCategory(id){
+        $.get("getBranchType", {
+                    type_id: id
+                },
+                function(data){
+                    $('#branch_category').empty();
+                    $('#branch_category').html('<option value="" selected>全部子类</option>');
+                    for (var i in data){
+                        $('#branch_category').append('<option value="'+data[i]['category_id']+'">'+data[i]['name']+'</option>');
+                    }
+                });
+    }
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;padding-top: 40px;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<div class="weui_tab_bd">
+    <div class="weui_panel">
+        <div class="weui_panel_bd">
+            <div class="weui_cells weui_cells_form">
+                <form action="" method="get">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">关键字</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="text" placeholder="" id="name" name="name" value="{$name}"/>
+                    </div>
+                </div>
+                <div class="weui_cell weui_cell_select weui_select_after">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">全部类别</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <select class="weui_select" id="category" name="category">
+                            <option value="" selected>全部类别</option>
+                            <foreach name="main_category_list" item="vo">
+                                <option value="{$vo.category_id}" <if condition="$category eq $vo['category_id']"> selected</if>>{$vo.name}</option>
+                            </foreach>
+                        </select>
+                    </div>
+                </div>
+                <div class="weui_cell weui_cell_select weui_select_after">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">全部子类</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <select class="weui_select" id="branch_category" name="branch_category">
+                            <option value="" selected>全部子类</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">价格上限</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="text" placeholder="" id="low_minPrice" name="low_minPrice" value="{$low_minPrice}"/>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">价格下限</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="text" placeholder="" id="high_maxPrice" name="high_maxPrice" value="{$high_maxPrice}"/>
+                    </div>
+                </div>
+                <div class="weui_cell weui_cell_select weui_select_after">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">成色</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <select class="weui_select" id="fineness" name="fineness">
+                            <option value="0-5" selected>全部成色</option>
+                            <option value="0-1" <if condition="$fineness eq '0-1'"> selected</if>>七成以下->七成新</option>
+                            <option value="0-2" <if condition="$fineness eq '0-2'"> selected</if>>七成以下->八成新</option>
+                            <option value="0-3" <if condition="$fineness eq '0-3'"> selected</if>>七成以下->九成新</option>
+                            <option value="0-4" <if condition="$fineness eq '0-4'"> selected</if>>七成以下->九五成新</option>
+                            <option value="1-2" <if condition="$fineness eq '1-2'"> selected</if>>七成->八成新</option>
+                            <option value="1-3" <if condition="$fineness eq '1-3'"> selected</if>>七成->九成新</option>
+                            <option value="1-4" <if condition="$fineness eq '1-4'"> selected</if>>七成->九五新</option>
+                            <option value="1-5" <if condition="$fineness eq '1-5'"> selected</if>>七成->全新</option>
+                            <option value="2-3" <if condition="$fineness eq '2-3'"> selected</if>>八成->九成新</option>
+                            <option value="2-4" <if condition="$fineness eq '2-4'"> selected</if>>八成->九五成新</option>
+                            <option value="2-5" <if condition="$fineness eq '2-5'"> selected</if>>八成->全新</option>
+                            <option value="3-4" <if condition="$fineness eq '3-4'"> selected</if>>九成->九五成新</option>
+                            <option value="3-5" <if condition="$fineness eq '3-5'"> selected</if>>九成->全新</option>
+                            <option value="4-5" <if condition="$fineness eq '4-5'"> selected</if>>九五成->全新</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="javascript:;" class="weui_btn weui_btn_default" id="show_details">显示高级选项</a>
+                <a href="javascript:;" class="weui_btn weui_btn_default" id="hide_details">隐藏高级选项</a>
+                <button type="submit" class="weui_btn weui_btn_primary">搜索</button>
+                </form>
+            </div>
+        </div>
+        <div class="weui_panel_hd">搜索结果</div>
+        <div class="weui_panel_bd">
+            <foreach name="products" item="vo" key="i">
+                <a class="weui_media_box weui_media_appmsg" href="/market/product?product_id={$vo['product_id']}">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="{$vo['url']}/square.140" alt="">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">{$vo.name}</h4>
+                        <p class="weui_media_desc">{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> | 数量 {$vo['quantity'] - $vo['quantity_sold']} |
+                            <switch name="vo.fineness">
+                                <case value="0">七成新以下</case>
+                                <case value="1">七成新</case>
+                                <case value="2">八成新</case>
+                                <case value="3">九成新</case>
+                                <case value="4">九五成新</case>
+                                <case value="5">全新</case>
+                                <default />新旧未知
+                            </switch>
+                        </p>
+                    </div>
+                </a>
+            </foreach>
+        </div>
+        <if condition="$products neq null">
+            <ul data-am-widget="pagination" class="am-pagination am-pagination-select">
+                <li class="am-pagination-prev ">
+                    <if condition="$page gt 1">
+                        <a href="/market/favorite?page={$page-1}" class="">上一页</a>
+                        <else/>
+                        <a href="#" class="">上一页</a>
+                    </if>
+                </li>
+                <li class="am-pagination-select">
+                    <select id="page" name="page">
+                        <for start="1" end="$num_pages+1">
+                            <option value="{$i}" class="" <if condition="$i eq $page">selected</if>>{$i}
+                            /{$num_pages}
+                            </option>
+                        </for>
+                    </select>
+                </li>
+                <li class="am-pagination-next">
+                    <if condition="$page lt $num_pages">
+                        <a href="/market/favorite?page={$page+1}" class="">下一页</a>
+                        <else/>
+                        <a href="#" class="">下一页</a>
+                    </if>
+                </li>
+            </ul>
+        </if>
+    </div>
+</div>
+</body>
+</html>

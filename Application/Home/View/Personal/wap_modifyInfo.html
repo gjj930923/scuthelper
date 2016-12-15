@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<script>
+    function check(){
+        return false;
+    }
+    $(document).ready(function(){
+        $('[id^=address_list-]').hide();
+        $('[id^=major_list-]').hide();
+        //地址提示功能的操作绑定
+        $('[id^=address_list-]').click(function(){
+            $('#address1').val($(this).html());
+            $('[id^=address_list-]').hide();
+        });
+        $('#address1').bind('input propertychange', function() {
+            var value = $(this).val();
+            if(value){
+                $.post('getAddresses', {}, function (data) {
+                    var num = 1;
+                    $('[id^=address_list-]').hide();
+                    var i;
+                    for(i in data){
+                        if(num <= 6 && data[i].indexOf(value) > -1){
+                            //$('#result').append(value);
+                            $('#address_list-'+num).show();
+                            $('#address_list-'+num).html(data[i]);
+                            num++;
+                        }
+                    }
+                });
+            }
+            else{
+                $('[id^=address_list-]').hide();
+            }
+        });
+
+        //专业提示功能的操作绑定
+        $('[id^=major_list-]').click(function(){
+            $('#major').val($(this).html());
+            $('[id^=major_list-]').hide();
+        });
+        $('#major').bind('input propertychange', function() {
+            var value = $(this).val();
+            if(value){
+                $.post('getMajors', {}, function (data) {
+                    var num = 1;
+                    $('[id^=major_list-]').hide();
+                    var i;
+                    for(i in data){
+                        if(num <= 6 && data[i].indexOf(value) > -1){
+                            //$('#result').append(value);
+                            $('#major_list-'+num).show();
+                            $('#major_list-'+num).html(data[i]);
+                            num++;
+                        }
+                    }
+                });
+            }
+            else{
+                $('[id^=major_list-]').hide();
+            }
+        });
+    });
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;padding-top: 40px;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<div class="hd">
+    <div class="weui_cells weui_cells_form">
+        <form method="post" action="updatePersonalInfo">
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">学号</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input id="user_id" name="user_id" type="hidden" value="{$user_info['user_id']}"/>
+                <input class="weui_input" id="student_id" name="student_id" type="text" disabled value="{$user_info['student_id']}"/>
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">姓名</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" id="real_name" name="real_name" type="text" disabled  value="{$user_info['real_name']}"/>
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">昵称</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="" id="nickname" name="nickname" value="{$user_info['nickname']}">
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">邮箱</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" id="email" name="email" value="{$user_info['email']}" placeholder="所有系统信息均发送至此邮箱">
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">QQ</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="tel" id="qq" name="qq" value="{$user_info['qq']}" pattern="[1-9][0-9]{4,}" placeholder="仅在求购成功后发送给卖家">
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">手机号码</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="tel" pattern="1[34578][0-9]{9}"  id="phone" name="phone" value="{$user_info['phone']}" placeholder="仅在求购成功后发送给卖家">
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">移动短号</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="tel" pattern="6[0-9]{1,5}" placeholder="选填" id="short_phone" name="short_phone" value="{$user_info['short_phone']}">
+            </div>
+        </div>
+        <div class="weui_cell weui_cell_select weui_select_after">
+            <div class="weui_cell_hd">
+                <label class="weui_label">性别</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <select class="weui_select" id="sex" name="sex">
+                    <option value="0" <if condition="($user_info['sex'] eq 0)"> selected="selected"</if>>请选择</option>
+                    <option value="1" <if condition="($user_info['sex'] eq 1)"> selected="selected"</if>>男</option>
+                    <option value="2" <if condition="($user_info['sex'] eq 2)"> selected="selected"</if>>女</option>
+                    <option value="3" <if condition="($user_info['sex'] eq 3)"> selected="selected"</if>>保密</option>
+                </select>
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">楼栋</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="" id="address1" name="address1" autocomplete="off" value="{$address}">
+            </div>
+        </div>
+        <div class="button_sp_area">
+            <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-1">按钮</a>
+            <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-2">按钮</a>
+            <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-3">按钮</a>
+            <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-4">按钮</a>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">房间号</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="" id="address2" name="address2" value="{$user_info['address2']}" required/>
+            </div>
+        </div>
+        <div class="weui_cell weui_cell_select weui_select_after">
+            <div class="weui_cell_hd">
+                <label class="weui_label">校区</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <select id="campus" name="campus" class="weui_select">
+                    <volist name="campus_list" id="vo">
+                        <option value="{$vo.campus_id}">{$vo.name}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="weui_cell weui_cell_select weui_select_after">
+            <div class="weui_cell_hd">
+                <label class="weui_label">学院</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <select id="school" name="school" class="weui_select">
+                    <volist name="school_list" id="vo">
+                        <option value="{$vo.school_id}">{$vo.name}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">专业班级</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" value="{$major}" placeholder="" id="major" name="major" required value="{$major}"/>
+            </div>
+        </div>
+        <div class="button_sp_area">
+            <a class="weui_btn weui_btn_mini weui_btn_primary" id="major_list-1">按钮</a>
+            <a class="weui_btn weui_btn_mini weui_btn_primary" id="major_list-2">按钮</a>
+            <a class="weui_btn weui_btn_mini weui_btn_primary" id="major_list-3">按钮</a>
+            <a class="weui_btn weui_btn_mini weui_btn_primary" id="major_list-4">按钮</a>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">入学年份</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="number" value="{$user_info['year']}" placeholder="" id="year" name="year" required value="{$user_info['year']}"/>
+            </div>
+        </div>
+        <div class="weui_cell weui_cell_select weui_select_after">
+            <div class="weui_cell_hd">
+                <label class="weui_label">最高学历</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <select id="education" name="education" class="weui_select">
+                    <option value="0" <if condition="($user_info['education'] eq 0)"> selected="selected"</if>>本科</option>
+                    <option value="1" <if condition="($user_info['education'] eq 1)"> selected="selected"</if>>硕士</option>
+                    <option value="2" <if condition="($user_info['education'] eq 2)"> selected="selected"</if>>博士</option>
+                    <option value="3" <if condition="($user_info['education'] eq 3)"> selected="selected"</if>>教职工</option>
+                    <option value="4" <if condition="($user_info['education'] eq 4)"> selected="selected"</if>>其他</option>
+                </select>
+            </div>
+        </div>
+        <div class="weui_cell weui_cell_select weui_select_after">
+            <div class="weui_cell_hd">
+                <label class="weui_label">周推荐日</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <select id="recommend_day" name="recommend_day" class="weui_select">
+                    <option value="0" <if condition="($user_info['recommend_day'] eq 0)"> selected="selected"</if>>星期日</option>
+                    <option value="1" <if condition="($user_info['recommend_day'] eq 1)"> selected="selected"</if>>星期一</option>
+                    <option value="2" <if condition="($user_info['recommend_day'] eq 2)"> selected="selected"</if>>星期二</option>
+                    <option value="3" <if condition="($user_info['recommend_day'] eq 3)"> selected="selected"</if>>星期三</option>
+                    <option value="4" <if condition="($user_info['recommend_day'] eq 4)"> selected="selected"</if>>星期四</option>
+                    <option value="5" <if condition="($user_info['recommend_day'] eq 5)"> selected="selected"</if>>星期五</option>
+                    <option value="6" <if condition="($user_info['recommend_day'] eq 6)"> selected="selected"</if>>星期六</option>
+                </select>
+            </div>
+        </div>
+        <div class="weui_cell weui_cell_select weui_select_after">
+            <div class="weui_cell_hd">
+                <label class="weui_label">推荐时间</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <select id="recommend_hour" name="recommend_hour" class="weui_select">
+                    <for start="0" end="24">
+                        <if condition="($user_info['recommend_hour'] neq $i) ">
+                            <option value="{$i}">{$i}:00</option>
+                            <else />
+                            <option value="{$user_info['recommend_hour']}" selected="selected">{$user_info['recommend_hour']}:00</option>
+                        </if>
+                    </for>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="weui_btn weui_btn_primary">提交</button>
+        <div><br><br><br><br></div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

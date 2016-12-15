@@ -1,0 +1,26 @@
+[ 2016-02-23T18:47:27+08:00 ] 127.0.0.1 /scuthelper/3/index.php/Application/Home/View/Image/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-02-23T18:47:27+08:00 ] 127.0.0.1 /scuthelper/3/index.php/Application/Home/View/Image/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+ERR: 无法加载模块:Application
+
+[ 2016-02-23T18:48:08+08:00 ] 127.0.0.1 /scuthelper/3/index.php/Market
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+ERR: 无法加载模块:Market
+
+[ 2016-02-23T21:19:58+08:00 ] 127.0.0.1 /scuthelper/3/index.php/isMobile?user_agent=ipad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+ERR: 无法加载模块:IsMobile
+

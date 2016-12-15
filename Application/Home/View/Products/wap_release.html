@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/plupload.full.min.js"></script>
+    <script src="../js/qiniu.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+
+        var pic_num = 0;
+        var uploaded_num = 0;
+        var is_continue = 0;//提交后是否继续发布商品
+        var uploader;
+        uploader = new Qiniu.uploader({
+            runtimes: 'html5,flash,html4',
+            browse_button : 'browse',
+            url : 'http://up-z0.qiniu.com/',
+            flash_swf_url : 'js/Moxie.swf',
+            silverlight_xap_url : 'js/Moxie.xap',
+            max_retries : 3,
+            uptoken_url:"createQiniuToken?bucket=scuthelper",
+            //chunk_size: '200kb',
+            resize: {
+                quality: 10
+            },
+            domain: 'http://77l5lx.com1.z0.glb.clouddn.com/',
+            unique_names: false ,
+            save_key: false,
+            //container: 'button_group',
+            max_file_size : '10mb',
+            filters: {
+                mime_types : [ //只允许上传图片文件
+                    { title : "图片文件", extensions : "jpg,gif,png,jpeg" }
+                ],
+                prevent_duplicates : true //不允许选取重复文件
+            },
+            multipart: true,
+            multipart_params: {
+            },
+            file_data_name: 'file',
+            init: {
+                'FilesAdded': function(uploader, files) {
+                    console.info("pic num:"+pic_num);
+                    console.info("files length:"+files.length);
+                    for(i in files){
+                        !function (i) {
+                            previewImage(files[i], function (imgsrc) {
+                                $('#browse').before('<li class="weui_uploader_file" style="background-image:url('+imgsrc+')" id="'+files[i].id+'"></li>');
+                            })
+                        }(i);
+                    }
+                    $('#pic_num').html(uploader.files.length);
+                    if(uploader.files.length == 9){
+                        $('.weui_uploader_input_wrp').hide();
+                    }
+                    else{
+                        $('.weui_uploader_input_wrp').show();
+                    }
+                    if(uploader.files.length == 0){
+                        $('#pic_confirm').hide();
+                    }
+                    else{
+                        $('#pic_confirm').show();
+                    }
+                },
+                'BeforeUpload': function(uploader, file) {
+                    // 每个文件上传前,处理相关的事情
+                },
+                'UploadProgress': function(uploader, file) {
+                    // 每个文件上传时,处理相关的事情
+                    $.weui.hideLoading();
+                    $.weui.loading("上传图片中……"+uploader.total.percent+'%');
+                },
+                'FileUploaded': function(up, file, info) {
+                    // 每个文件上传成功后,处理相关的事情
+                    // 其中 info 是文件上传成功后，服务端返回的json，形式如
+                    // {
+                    //    "hash": "Fh8xVqod2MQ1mocfI4S4KpRL6D98",
+                    //    "key": "gogopher.jpg"
+                    //  }
+                    // 参考http://developer.qiniu.com/docs/v6/api/overview/up/response/simple-response.html
+                    var domain = up.getOption('domain');
+                    var res = $.parseJSON(info);
+                    var sourceLink = domain + res.key; //获取上传成功后的文件的Url
+                    $('#url'+(uploaded_num+1)).val(sourceLink);
+                    uploaded_num++;
+                    //$.weui.hideLoading();
+                    //$.weui.loading("上传图片中……"+uploaded_num+'/'+up.files.length);
+                },
+                'Error': function(up, err, errTip) {
+                    //上传出错时,处理相关的事情
+                },
+                'UploadComplete': function() {
+                    //队列文件处理完毕后,处理相关的事情
+                    releaseProduct();
+
+                },
+                'FilesRemoved': function(uploader,files) {
+                    for(i in files){
+                        $('#'+files[i].id).remove();
+                    }
+                    $('#pic_num').html(uploader.files.length);
+                    if(uploader.files.length == 0){
+                        $('#pic_confirm').hide();
+                    }
+                    else{
+                        $('#pic_confirm').show();
+                    }
+                },
+                'Key': function(uploader, file) {
+                    // 若想在前端对每个文件的key进行个性化处理，可以配置该函数
+                    // 该配置必须要在 unique_names: false , save_key: false 时才生效
+
+                    var fileData = file.name.split(".");
+                    var type = fileData[fileData.length-1];
+                    var key = "scuthelper/market/upload_pic/"+"<?php echo date('YmdHis');?>"+Math.floor(10000 + 90000.0 * Math.random())+"."+type;
+                    // do something with key here
+                    return key;
+                }
+            }
+        });
+        $('#pic_confirm').hide();
+        $('#product_info').hide();
+        <if condition="$product neq null">
+            $('#browse,#pic_confirm,#submit_continue').hide();
+            $('#product_info').show();
+            $('#pic_num').html({$pic_url|count});
+        </if>
+        $('#delete_pics').click(function () {
+            uploader.splice(0,uploader.files.length);
+        });
+        $('#next_step').click(function(){
+            $('#product_info').show();
+            $(this).hide();
+            $('#browse,#delete_pics').hide();
+        });
+        $('#main_category').change(function(){
+            $.get("getBranchType", {
+                        type_id: $(this).val()
+                    },
+                    function(data){
+                        $('#category').empty();
+                        $('#category').html('<option value="" selected>全部子类别</option>');
+                        for (var i in data){
+                            $('#category').append('<option value="'+data[i]['category_id']+'">'+data[i]['name']+'</option>');
+                        }
+                    });
+        });
+        $('#submit,#submit_continue').click(function(){
+            if($(this).attr('id') == 'submit_continue'){
+                is_continue = 1;
+            }
+            <if condition="$product eq null">
+                $.weui.loading('上传图片中……（可能要稍等片刻）');
+                uploader.start(); //开始上传
+            <else/>
+                releaseProduct();
+            </if>
+        });
+
+        function releaseProduct(){
+            $.weui.hideLoading();
+            $.weui.loading('提交商品信息中……');
+            var category = 0;
+            var attr_id = $(this).attr('id');
+            if($('#category').val() != 0){
+                category = $('#category').val();
+            }
+            else{
+                category = $('#main_category').val();
+            }
+            $.post("releaseProduct",
+                    {
+                        user_id:'{$user_info.user_id}',
+                        product_id:$('#product_id').val(),
+                        product_name:$('#product_name').val(),
+                        min_price:$('#min_price').val(),
+                        max_price:$('#max_price').val(),
+                        category:category,
+                        quantity:$('#quantity').val(),
+                        fineness:$('#fineness').val(),
+                        description:$('#description').val(),
+                        source:$('#source').val(),
+                        url1:$('#url1').val(),
+                        url2:$('#url2').val(),
+                        url3:$('#url3').val(),
+                        url4:$('#url4').val(),
+                        url5:$('#url5').val(),
+                        url6:$('#url6').val(),
+                        url7:$('#url7').val(),
+                        url8:$('#url8').val(),
+                        url9:$('#url9').val()
+                    },function(data, status){
+                        $.weui.hideLoading();
+                        switch(parseInt(data)){
+                            case -1:
+                                $.weui.alert("商品名称不得为空或超过60字");
+                                break;
+                            case -2:
+                                $.weui.alert("商品价格须填写数字");
+                                break;
+                            case -3:
+                                $.weui.alert("商品价格须填写数字，最高价格不得低于最低价格");
+                                break;
+                            case -4:
+                                $.weui.alert("分类不存在");
+                                break;
+                            case -5:
+                                $.weui.alert("商品数量无效");
+                                break;
+                            case -6:
+                                $.weui.alert("商品成色无效");
+                                break;
+                            case -7:
+                                $.weui.alert("商品描述不得为空或大于200字");
+                                break;
+                            case -8:
+                                $.weui.alert("商品来源无效");
+                                break;
+                            case -9:
+                                $.weui.alert("没有上传图片");
+                                break;
+                            case -10:
+                                $.weui.alert("商品添加或更新失败");
+                                break;
+                            case -11:
+                                $.weui.alert("商品图片上传失败");
+                                break;
+                            case 0:
+                                if(is_continue){
+                                    $.weui.toast('商品上传成功，准备开始发布下一件商品');
+                                    window.location.href = "";
+                                }
+                                else{
+                                    $.weui.toast('商品上传成功，即将跳转到个人中心');
+                                    window.location.href = "ordersAndProducts";
+                                }
+                                break;
+                            default:
+                        }
+                    }
+            )
+        }
+
+        function previewImage(file,callback){
+            if(!file || !/image\//.test(file.type)) return; //确保文件是图片
+            if(file.type=='image/gif'){
+                var fr = new mOxie.FileReader();
+                fr.onload = function(){
+                    callback(fr.result);
+                    fr.destroy();
+                    fr = null;
+                }
+                fr.readAsDataURL(file.getSource());
+            }else{
+                var preloader = new mOxie.Image();
+                preloader.onload = function() {
+                    preloader.downsize( 120, 120 );//先压缩一下要预览的图片,宽120，高120
+                    var imgsrc = preloader.type=='image/jpeg' ? preloader.getAsDataURL('image/jpeg',80) : preloader.getAsDataURL(); //得到图片src,实质为一个base64编码的数据
+                    callback && callback(imgsrc); //callback传入的参数为预览图片的url
+                    preloader.destroy();
+                    preloader = null;
+                };
+                preloader.load( file.getSource() );
+            }
+        }
+    });
+
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;padding-top: 40px;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<div class="weui_tab_bd">
+    <div class="weui_cells weui_cells_form">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <div class="weui_uploader">
+                    <div class="weui_uploader_hd weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">图片上传（如果上传异常请在浏览器打开~）</div>
+                        <div class="weui_cell_ft"><span id="pic_num">0</span>/9</div>
+                    </div>
+                    <div class="weui_uploader_bd">
+                        <if condition="$product neq null">
+                            <volist name="pic_url" id="vo">
+                                <li class="weui_uploader_file" style="background-image:url('{$vo['url']}/square.140')"></li>
+                            </volist>
+                        </if>
+                        <ul class="weui_uploader_files">
+                            <li class="weui_uploader_file" style="background-image:url('../icon/add.png')" id="browse"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="button_sp_area" id="pic_confirm">
+                    <a href="javascript:;" class="weui_btn weui_btn_warn" id="delete_pics">清除所有照片</a>
+                    <a href="javascript:;" class="weui_btn weui_btn_primary" id="next_step">填写商品信息</a>
+                </div>
+                <div class="weui_cells weui_cells_form" id="product_info">
+                    <input id="product_id" type="hidden" value="{$product['product_id']}"/>
+                    <input id="url1" type="hidden"/>
+                    <input id="url2" type="hidden"/>
+                    <input id="url3" type="hidden"/>
+                    <input id="url4" type="hidden"/>
+                    <input id="url5" type="hidden"/>
+                    <input id="url6" type="hidden"/>
+                    <input id="url7" type="hidden"/>
+                    <input id="url8" type="hidden"/>
+                    <input id="url9" type="hidden"/>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">商品名称</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input id="product_name" name="product_name" class="weui_input" type="text" placeholder="不得超过60字" required value="{$product['name']}"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">最低价格</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input id="min_price" name="min_price" class="weui_input" type="tel" placeholder="" required value="{$product['min_price']}">
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">最高价格</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input id="max_price" name="max_price" class="weui_input" type="tel" placeholder="选填" <if condition="$product['min_price'] + 0.01 lt $product['max_price']">value="{$product['max_price']}"</if>>
+                        </div>
+                    </div>
+                    <div class="weui_cell weui_cell_select weui_select_after">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">类别</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select"  id="main_category" name="main_category">
+                                <option value="0">全部类别</option>
+                                <foreach name="main_category_list" item="vo">
+                                    <if condition="$vo['category_id'] eq $product['category']">
+                                        <option value="{$vo.category_id}" selected="selected">{$vo.name}</option>
+                                        <else/>
+                                        <option value="{$vo.category_id}">{$vo.name}</option>
+                                    </if>
+                                </foreach>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="weui_cell weui_cell_select weui_select_after">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">子类别</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" id="category" name="category">
+                                <option value="0">全部子类别</option>
+                                <foreach name="branch_category_list" item="vo">
+                                    <if condition="$vo['category_id'] eq $branch_category_id">
+                                        <option value="{$vo.category_id}" selected="selected">{$vo.name}</option>
+                                        <else/>
+                                        <option value="{$vo.category_id}">{$vo.name}</option>
+                                    </if>
+                                </foreach>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">数量</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <if condition="$product neq null">
+                            <input id="quantity" name="quantity" class="weui_input" type="number" required value="{$product['quantity'] - $product['quantity_sold']}">
+                            <else/><input id="quantity" name="quantity" class="weui_input" type="number" required value="1">
+                            </if>
+                        </div>
+                    </div>
+                    <div class="weui_cell weui_cell_select weui_select_after">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">成色</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" id="fineness" name="fineness">
+                                <option value="6" <if condition="$product['fineness'] eq 6">selected</if>>全新</option>
+                                <option value="5" <if condition="$product['fineness'] eq 5">selected</if>>九五成以上</option>
+                                <option value="4" <if condition="$product['fineness'] eq 4">selected</if>>九成以上</option>
+                                <option value="3" <if condition="$product['fineness'] eq 3">selected</if>>八成以上</option>
+                                <option value="2" <if condition="$product['fineness'] eq 2">selected</if>>七成以上</option>
+                                <option value="1" <if condition="$product['fineness'] eq 1">selected</if>>七成以下</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="weui_cell weui_cell_select weui_select_after">
+                        <div class="weui_cell_hd">
+                            <label class="weui_label">商品来源</label>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" id="source" name="source">
+                                <option value="0" <if condition="$product['source'] eq 0">selected</if>>未知</option>
+                                <option value="1" <if condition="$product['source'] eq 1">selected</if>>网购</option>
+                                <option value="2" <if condition="$product['source'] eq 2">selected</if>>代购</option>
+                                <option value="3" <if condition="$product['source'] eq 3">selected</if>>海淘</option>
+                                <option value="4" <if condition="$product['source'] eq 4">selected</if>>线下商店</option>
+                                <option value="5" <if condition="$product['source'] eq 5">selected</if>>奖品或赠品</option>
+                                <option value="6" <if condition="$product['source'] eq 6">selected</if>>其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <textarea id="description" name="description" class="weui_textarea" placeholder="商品描述" rows="5">{$product['description']}</textarea>
+                            <div class="weui_textarea_counter"><span>200字以内</span></div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="weui_btn weui_btn_primary" id="submit_continue" name="submit_continue">提交并继续添加下一商品</a>
+                    <if condition="$product eq null">
+                    <a href="javascript:;" class="weui_btn weui_btn_primary" id="submit" name="submit">仅提交商品信息</a>
+                    <else/><a href="javascript:;" class="weui_btn weui_btn_primary" id="submit" name="submit">提交修改</a>
+                    </if>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

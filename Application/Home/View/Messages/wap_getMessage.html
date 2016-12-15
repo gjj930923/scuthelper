@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $('#page').change(function(){
+            var array = window.location.href.split('?');
+            window.location.href = array[0]+"?page="+$('#page').val();
+        });
+        $('.weui_cells_access').click(function(){
+            if($(this).children('a').children('#is_read').val() == 0){
+                var title = $(this).children('a').children('div').children('p').html().replace("<strong>","").replace("</strong>","");
+                $(this).children('a').children('div').children('p').html(title);
+                $.post("markAsRead",
+                        {
+                            user_id:'{$user_info.user_id}',
+                            message_id:$(this).children('a').children('#message_id').val()
+                        }, function(data,status){
+                        });
+            }
+            var content = $(this).children('a').children('#send_time').val()+'<br>'+$(this).children('a').children('#content').val();
+            var title = $(this).children('a').children('div').children('p').html();
+            $.weui.alert(content, {title: title});
+        });
+    });
+
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;padding-top: 40px;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<if condition="$messages neq null">
+    <ul data-am-widget="pagination" class="am-pagination am-pagination-select">
+        <li class="am-pagination-prev ">
+            <if condition="$page gt 1">
+                <a href="/market/favorite?page={$page-1}" class="">上一页</a>
+                <else/>
+                <a href="#" class="">上一页</a>
+            </if>
+        </li>
+        <li class="am-pagination-select">
+            <select id="page" name="page">
+                <for start="1" end="$num_pages+1">
+                    <option value="{$i}" class="" <if condition="$i eq $page">selected</if>>{$i}
+                    /{$num_pages}
+                    </option>
+                </for>
+            </select>
+        </li>
+        <li class="am-pagination-next">
+            <if condition="$page lt $num_pages">
+                <a href="/market/favorite?page={$page+1}" class="">下一页</a>
+                <else/>
+                <a href="#" class="">下一页</a>
+            </if>
+        </li>
+    </ul>
+</if>
+<if condition="$messages eq null">
+    <a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_default" style="margin-top: 10px;">空空如也！</a>
+</if>
+<div class="weui_panel">
+    <div class="weui_panel_bd">
+        <div class="weui_media_box weui_media_small_appmsg">
+            <volist name="messages" id="vo">
+                <div class="weui_cells weui_cells_access">
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>
+                                <if condition="$vo.is_read eq 0">
+                                    <strong>{$vo['title']}</strong>
+                                    <else/>{$vo['title']}
+                                </if>
+                            </p>
+                        </div>
+                        <span class="weui_cell_ft">{$vo['nickname']}</span>
+                        <input type="hidden" value="{$vo['content']}" id="content">
+                        <input type="hidden" value="{$vo['send_time']}" id="send_time">
+                        <input type="hidden" value="{$vo['is_read']}" id="is_read">
+                        <input type="hidden" value="{$vo['message_id']}" id="message_id">
+                    </a>
+                </div>
+            </volist>
+        </div>
+    </div>
+</div>
+<if condition="($messages neq null) AND (count($messages) gt 7)">
+    <ul data-am-widget="pagination" class="am-pagination am-pagination-select">
+        <li class="am-pagination-prev ">
+            <if condition="$page gt 1">
+                <a href="/market/favorite?page={$page-1}" class="">上一页</a>
+                <else/>
+                <a href="#" class="">上一页</a>
+            </if>
+        </li>
+        <li class="am-pagination-select">
+            <select id="page" name="page">
+                <for start="1" end="$num_pages+1">
+                    <option value="{$i}" class="" <if condition="$i eq $page">selected</if>>{$i}
+                    /{$num_pages}
+                    </option>
+                </for>
+            </select>
+        </li>
+        <li class="am-pagination-next">
+            <if condition="$page lt $num_pages">
+                <a href="/market/favorite?page={$page+1}" class="">下一页</a>
+                <else/>
+                <a href="#" class="">下一页</a>
+            </if>
+        </li>
+    </ul>
+</if>
+</body>
+</html>

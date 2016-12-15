@@ -1,0 +1,200 @@
+<script>
+    $(document).ready(function(){
+        $("#show_all_orders").hide();
+        $('#delete_order_submit').click(function(){
+            $(this).button("loading");
+            $.post("deleteOrder",
+                    {
+                        user_id:$('#delete_user_id').val(),
+                        order_id:$('#delete_order_id').val()
+                    },
+                    function (data,status){
+                        switch(data){
+                            case "0":
+                                $('#delete_order_modal').modal('hide');
+                                $('#delete_order_button-'+$('#delete_order_id').val()).remove();
+                                $('#order-'+$('#delete_order_id').val()+" td:eq(5)").html('已被您删除');
+                        }
+                    }
+            );
+            $(this).button("reset");
+        });
+        $("#hide_deleted_orders").click(function(){
+            $("tbody .success").hide();
+            $("tbody .others").hide();
+            $("#show_all_orders").show();
+            $(this).hide();
+        });
+        $("#show_all_orders").click(function(){
+            $("tbody .success").show();
+            $("tbody .others").show();
+            $("#hide_deleted_orders").show();
+            $(this).hide();
+        });
+    });
+
+    function check(){
+        return false;
+    }
+
+    function deleteOrderModal(delete_order_id){
+        $('#delete_order_id').val(delete_order_id);
+        $('#delete_order_modal').modal('show');
+    }
+</script>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="/market">主页</a> <span class="divider">/</span>
+                </li>
+                <li class="active">
+                    个人中心<span class="divider">/</span>
+                </li>
+                <li class="active">
+                    求购信息处理
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span2">
+            <ul class="nav nav-list">
+                <li class="active">
+                    <a href="#">我的商品与求购</a>
+                </li>
+                <li>
+                    <a href="/market/favorite">我的收藏</a>
+                </li>
+                <li>
+                    <a href="/market/QAs">问答处理</a>
+                </li>
+                <li>
+                    <a href="/market/modifyPersonalInfo">个人信息修改</a>
+                </li>
+                <li>
+                    <a href="/market/password">密码修改</a>
+                </li>
+                <li>
+                    <a href="/market/msgbox">收件箱</a>
+                </li>
+                <li>
+                    <a href="/market/feedback">意见反馈</a>
+                </li>
+            </ul>
+        </div>
+        <div class="span10">
+            <button id="hide_deleted_orders" name="hide_deleted_orders" class="btn btn-info">只显示待处理求购</button>
+            <button id="show_all_orders" name="show_all_orders" class="btn btn-info">显示全部求购</button>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        商品
+                    </th>
+                    <th>
+                        数量
+                    </th>
+                    <th>
+                        单价（元）
+                    </th>
+                    <th>
+                        期望交易时间
+                    </th>
+                    <th>
+                        实际交易时间
+                    </th>
+                    <th>
+                        交易地址
+                    </th>
+                    <th>
+                        操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <volist name="orders" id="vo">
+                        <if condition="$vo.status eq 0">
+                            <tr class="warning" id="order-{$vo.order_id}">
+                            <elseif condition="$vo.status eq 1"/>
+                            <tr class="success" id="order-{$vo.order_id}">
+                            <else/>
+                            <tr class="others" id="order-{$vo.order_id}">
+                        </if>
+                            <td>
+                                {$vo.name}
+                            </td>
+                            <td>
+                                {$vo.quantity}
+                            </td>
+                            <td>
+                                <if condition="$vo.status eq 0">
+                                    {$vo.payment_amount}（待确认）
+                                    <elseif condition="$vo.status eq 1" />
+                                    <strong>{$vo.payment_amount}（已确认）</strong>
+                                    <else/>
+                                    {$vo.payment_amount}
+                                </if>
+                            </td>
+                            <td>
+                                {$vo.expect_exchange_time}
+                            </td>
+                            <td>
+                                <if condition="$vo.status eq 0">
+                                    待确定
+                                    <elseif condition="$vo.status eq 1" />
+                                    <strong>{$vo.real_exchange_time}</strong>
+                                    <else/>
+                                    N/A
+                                </if>
+                            </td>
+                            <td>
+                                <if condition="$vo.status eq 0">
+                                        {$vo.content}-{$vo.address2}（待确认）
+                                    <elseif condition="$vo.status eq 1" />
+                                        <strong>{$vo.content}-{$vo.address2}（已确认）</strong>
+                                    <else/>
+                                        {$vo.content}-{$vo.address2}
+                                </if>
+                            </td>
+                            <td>
+                                <if condition="$vo.status eq 0">
+                                    <button class="btn btn-danger btn-small" href="javascript:void(0);" onclick="deleteOrderModal({$vo.order_id})">撤销求购</button>
+                                <elseif condition="$vo.status eq 1" />
+                                    已同意
+                                <elseif condition="$vo.status eq 2" />
+                                    商品已被删除
+                                <elseif condition="$vo.status eq 3" />
+                                    已被卖家撤销
+                                <elseif condition="$vo.status eq 4" />
+                                    已被您撤销
+                                </if>
+                            </td>
+                        </tr>
+                    </volist>
+                </tbody>
+            </table>
+        </div>
+        <!--Modal模态框 -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal hide fade" id="delete_order_modal" role="dialog">
+            <div class="modal-header">
+                <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+                <h3>
+                    操作提示
+                </h3>
+            </div>
+            <div class="modal-body">
+                <h3>
+                    确定要删除该求购信息？删除后将无法恢复！
+                </h3>
+                <input type="hidden" id="delete_user_id" value="{$user_info.user_id}">
+                <input type="hidden" id="delete_order_id">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="button" onclick="return check();" id="delete_order_submit">删除</button>
+                <button aria-hidden="true" class="btn" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!--End Modal模态框 -->
+    </div>
+</div>

@@ -1,0 +1,170 @@
+<script>
+    $(document).ready(function(){
+        $('#page').change(function(){
+            var array = window.location.href.split('?');
+            window.location.href = array[0]+"?page="+$('#page').val();
+        });
+        $('#show_all_products').hide();
+        $('#hide_deleted_products').click(function(){
+            $('.others').hide();
+            $('#show_all_products').show();
+            $(this).hide();
+        });
+        $('#show_all_products').click(function(){
+            $('.others').show();
+            $('#hide_deleted_products').show();
+            $(this).hide();
+        });
+        $('#delete_favorite_submit').click(function () {
+            $.post("modifyFavorite",
+                    {
+                        user_id:'{$user_info.user_id}',
+                        product_id:$('#delete_favorite_id').val()
+                    },function (data,status){
+                        if(data == 1 || data == 0){
+                            $('#delete_favorite_modal').modal('hide');
+                            window.location.href = "";
+                        }
+                    }
+            );
+        });
+    });
+
+    function check(){
+        return false;
+    }
+
+    function deleteFavorite(product_id){
+        $('#delete_favorite_id').val(product_id);
+        $('#delete_favorite_modal').modal('show');
+    }
+</script>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="/market">主页</a> <span class="divider">/</span>
+                </li>
+                <li class="active">
+                    个人中心<span class="divider">/</span>
+                </li>
+                <li class="active">
+                    我的收藏
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span2">
+            <ul class="nav nav-list">
+                <li>
+                    <a href="/market/ordersAndProducts">我的商品与求购</a>
+                </li>
+                <li class="active">
+                    <a href="#">我的收藏</a>
+                </li>
+                <li>
+                    <a href="/market/QAs">问答处理</a>
+                </li>
+                <li>
+                    <a href="/market/modifyPersonalInfo">个人信息修改</a>
+                </li>
+                <li>
+                    <a href="/market/password">密码修改</a>
+                </li>
+                <li>
+                    <a href="/market/msgbox">收件箱</a>
+                </li>
+                <li>
+                    <a href="/market/feedback">意见反馈</a>
+                </li>
+            </ul>
+        </div>
+        <div class="span10">
+            <button class="btn btn-info" type="button" id="show_all_products">显示全部商品</button>
+            <button class="btn btn-info" type="button" id="hide_deleted_products">隐藏已删除商品</button>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        商品
+                    </th>
+                    <th>
+                        数量
+                    </th>
+                    <th>
+                        价格（元）
+                    </th>
+                    <th>
+                        卖方地址
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="products" id="vo">
+                    <if condition="($vo.is_deleted eq 0) and ($vo['quantity_sold'] lt $vo['quantity'])">
+                        <tr class="info" id="product-{$vo.favour_id}">
+                            <else/>
+                        <tr class="others" id="product-{$vo.favour_id}">
+                    </if>
+                    <td>
+                        <a target="_blank" href="product?product_id={$vo.product_id}">{$vo.name}</a>
+                    </td>
+                    <td>
+                        <if condition="$vo.is_deleted eq 0">
+                            <if condition="$vo['quantity_sold'] lt $vo['quantity']">
+                                {$vo['quantity']-$vo['quantity_sold']}
+                                <else/>已售罄
+                            </if>
+                            <else/>商品已被删除
+                        </if>
+                    </td>
+                    <td>
+                        {$vo.min_price}
+                        <if condition="$vo.min_price + 0.01 lt $vo.max_price">
+                            - {$vo.max_price}
+                        </if>
+                    </td>
+                    <td>
+                        {$vo.content}-{$vo.address2}
+                    </td>
+                    <td>
+                        <button id="delete" name="delete" class="btn btn-danger btn-small" href="javascript:void(0);" onclick="deleteFavorite({$vo.product_id})">删除</button>
+                    </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+        </div>
+        <!--Modal模态框 -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal hide fade" id="delete_favorite_modal" role="dialog">
+            <div class="modal-header">
+                <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+                <h3>
+                    操作提示
+                </h3>
+            </div>
+            <div class="modal-body">
+                <h3>
+                    确定要删除该收藏信息？删除后将无法恢复！
+                </h3>
+                <input type="hidden" id="delete_user_id" value="{$user_info.user_id}">
+                <input type="hidden" id="delete_favorite_id">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="button" onclick="return check();" id="delete_favorite_submit">删除</button>
+                <button aria-hidden="true" class="btn" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!--End Modal模态框 -->
+        <div align="right">
+            <select id="page" name="page" class="input-small">
+                <for start="1" end="$num_pages+1">
+                    <option value="{$i}" <if condition="$i eq $page">selected</if>>第{$i}页</option>
+                </for>
+            </select>
+        </div>
+    </div>
+</div>

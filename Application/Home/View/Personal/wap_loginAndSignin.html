@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<script>
+    function check(){
+        return false;
+    }
+    $(document).ready(function(){
+        //$.weui.alert('警告内容');
+
+        $("#form2").hide();
+        $("#form3").hide();
+        $('[id^=address_list-]').hide();
+        $('#turn_to_log_in').click(function(){
+            $("#form1").hide();
+            $("#form3").show();
+            $('#form3 #student_id').val($('#stu_id').val()).focus();
+        });
+        $('#turn_to_sign_in').click(function(){
+            $("#form3").hide();
+            $("#form1").show();
+            $('#stu_id').val($('#form3 #student_id').val()).focus();
+        });
+        $("#verify").click(function(){
+            $.weui.loading('验证身份中...');
+            $.post("studentIdCertify",
+                    {
+                        student_id:$('#stu_id').val(),
+                        library_password:$('#library_password').val()
+                    }, function(data,status){
+                        setTimeout($.weui.hideLoading, 100);
+                        if(data != "-1" && data != "-2" && data != "-3" && data != "-4") {
+                            $("#form1").hide();
+                            $("#form2").show();
+                            $("#student_id").val($('#stu_id').val());
+                            $("#name").val(data);
+                            $('#email').focus();
+                        }
+                        else{
+                            if(data == "-1"){
+                                $.weui.topTips('图书馆学号或密码错误');
+                            }
+                            else if(data == "-2"){
+                                $.weui.topTips('暂时无法登录图书馆网站');
+                            }
+                            else if(data == "-3"){
+                                $.weui.topTips('该学号已被注册');
+                            }
+                            else if(data == "-4"){
+                                $.weui.topTips('学号密码不得为空');
+                            }
+                        }
+                    });
+        });
+
+        $("#submit").click(function(){
+            $.weui.loading('正在注册中...');
+            $.post("signinCertify",
+                    {
+                        student_id:$('#student_id').val(),
+                        name:$('#name').val(),
+                        email:$('#email').val(),
+                        password:$('#password').val(),
+                        confirm_password:$('#confirm_password').val(),
+                        nickname:$('#nickname').val(),
+                        qq:$('#qq').val(),
+                        address1:$('#address1').val(),
+                        campus:$('#campus').val(),
+                        school:$('#school').val(),
+                        phone:$('#phone').val()
+                    }, function(data,status){
+                        setTimeout($.weui.hideLoading, 100);
+                        if(data >= 0){
+                            window.location.href="./modifyPersonalInfo";
+                        }
+                        if(data == "-1"){
+                            $.weui.topTips("姓名不得为空。");
+                        }
+                        else if(data == "-2"){
+                            $.weui.topTips("邮箱为空或无效");
+                        }
+                        else if(data == "-3"){
+                            $.weui.topTips("密码不合要求");
+                        }
+                        else if(data == "-4"){
+                            $.weui.topTips("密码和确认密码不一致");
+                        }
+                        else if(data == "-5"){
+                            $.weui.topTips("该学号已被注册。");
+                        }
+                        else if(data == "-6"){
+                            $.weui.topTips("昵称不得为空。");
+                        }
+                        else if(data == "-7"){
+                            $.weui.topTips("qq号格式不正确。");
+                        }
+                        else if(data == "-8"){
+                            $.weui.topTips("手机号格式不正确。");
+                        }
+                    });
+        });
+
+        $('#forget_password').click(function(){
+            $.weui.loading('正在发送修改密码邮件到您邮箱...');
+            $.post("getBackPassword",{
+                student_id:$('#form3 #student_id').val()
+            },function(data){
+                setTimeout($.weui.hideLoading, 100);
+                if(data == "-1"){
+                    $.weui.topTips("用户未注册。");
+                }
+                else if(data == "-2"){
+                    $.weui.topTips("重置密码链接生成失败");
+                }
+                else if(data == "-3"){
+                    $.weui.topTips("邮件发送失败");
+                }
+                else if(data == "-4"){
+                    $.weui.topTips("学号不得为空");
+                }
+                else if(data.email){
+                    $.weui.alert("重置邮件已发送至您设定的邮箱 "+data.email+"。请注意查收，并设置邮箱 scuthelper3@sina.com 和 scuthelper@163.com 至您的邮箱白名单！");
+                }
+            });
+        });
+
+        //地址提示功能的操作绑定
+        $('[id^=address_list-]').click(function(){
+            $('#address1').val($(this).html());
+            $('[id^=address_list-]').hide();
+        });
+        $('#address1').bind('input propertychange', function() {
+            var value = $(this).val();
+            if(value){
+                $.post('getAddresses', {}, function (data) {
+                    var num = 1;
+                    $('[id^=address_list-]').hide();
+                    var i;
+                    for(i in data){
+                        if(num <= 6 && data[i].indexOf(value) > -1){
+                            //$('#result').append(value);
+                            $('#address_list-'+num).show();
+                            $('#address_list-'+num).html(data[i]);
+                            num++;
+                        }
+                    }
+                });
+            }
+            else{
+                $('[id^=address_list-]').hide();
+            }
+        });
+    });
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;">
+    <div class="hd" id="form1">
+        <div class="weui_cells_title">注册第一步：验证学生身份</div>
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">学号</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" pattern="[0-9]{12}" placeholder="" id="stu_id">
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">图书馆密码</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="password" placeholder="默认为学号后6位" id="library_password">
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="weui_btn weui_btn_primary" id="verify" onclick="return check();">验证学生身份</a>
+        <a href="javascript:;" class="weui_btn weui_btn_default" id="turn_to_log_in" onclick="return check();">我已注册</a>
+        <p class="page_desc">本网站<strong>不会</strong>以任何形式保存华南理工大学OPAC图书馆密码，仅用于验证学生身份。<a href="http://202.38.232.10/opac/servlet/opac.go?cmdACT=mylibrary.index" target="_blank">点击进入华南理工大学OPAC图书馆网站</a></p>
+    </div>
+    <div class="hd" id="form2">
+        <div class="weui_cells_title">注册第二步：完善个人信息</div>
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">学号</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" id="student_id" name="student_id" type="text" disabled/>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">姓名</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" id="name" name="name" type="text" disabled />
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">邮箱</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"  placeholder="所有系统信息均发送至此邮箱" id="email">
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>为保证正常收件，请将scuthelper@163.com列入邮箱白名单，谢谢！</p>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">本站密码</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="password" placeholder="" pattern="[a-zA-Z0-9]{9}[a-zA-Z0-9]*" id="password">
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">确认密码</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="password" placeholder="" pattern="[a-zA-Z0-9]{9}[a-zA-Z0-9]*" id="confirm_password">
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">昵称</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" placeholder="" id="nickname">
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">QQ</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" id="qq" pattern="[1-9][0-9]{4,}" placeholder="仅在求购成功后发送给卖家">
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">手机号码</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" pattern="1[34578][0-9]{9}" id="phone" placeholder="仅在求购成功后发送给卖家">
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                    <label class="weui_label">楼栋</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" placeholder="" id="address1" autocomplete="off">
+                </div>
+            </div>
+            <div class="button_sp_area">
+                <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-1">按钮</a>
+                <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-2">按钮</a>
+                <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-3">按钮</a>
+                <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-4">按钮</a>
+            </div>
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    校区
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select id="campus" name="campus" class="weui_select">
+                        <volist name="campus_list" id="vo">
+                            <option value="{$vo.campus_id}">{$vo.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    学院
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select id="school" name="school" class="weui_select">
+                        <volist name="school_list" id="vo">
+                            <option value="{$vo.school_id}">{$vo.name}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="weui_btn weui_btn_primary" id="submit" onclick="return check();">注册</a>
+    </div>
+    <div class="hd" id="form3">
+        <form action="loginCertify" method="post">
+            <div class="weui_cells_title">登录</div>
+            <div class="weui_cells weui_cells_form">
+                <input id="redirect_url" name="redirect_url" type="hidden" value="{$redirect_url}"/>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">学号</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="tel" pattern="20[0-9]{10}" placeholder="" id="student_id" name="student_id"/>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">密码</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="password" placeholder="" id="password" name="password"/>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="weui_btn weui_btn_primary" style="margin-bottom: 5px;">登录</button>
+        </form>
+        <a href="javascript:;" class="weui_btn weui_btn_default" id="turn_to_sign_in" onclick="return check();">还没注册</a>
+        <a href="javascript:;" class="weui_btn weui_btn_default" id="forget_password" onclick="return check();">忘记密码</a>
+    </div>
+</body>
+</html>

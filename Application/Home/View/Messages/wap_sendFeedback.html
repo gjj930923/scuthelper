@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;padding-top: 40px;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<div class="hd">
+    <div class="weui_cells weui_cells_form">
+        <form method="post" action="addFeedback">
+            <div class="weui_cell">
+                <div class="weui_cell_hd weui_cell_primary">您的意见是我们最大的动力，反馈内容不少于20字。</div>
+            </div>
+            <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="input-large" id="user_id" name="user_id" value="<if condition='$user_info neq null'>{$user_info['user_id']}<else />0</if>" type="hidden" />
+                        <textarea class="weui_textarea" placeholder="请输入意见反馈" rows="10" id="feedback" name="feedback"></textarea>
+                        <div class="weui_textarea_counter"><span>限400字</span></div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="weui_btn weui_btn_primary">确认修改</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

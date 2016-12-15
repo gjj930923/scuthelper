@@ -1,0 +1,241 @@
+[ 2015-05-20T00:03:50+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post?https://api.weibo.com/2/statuses/update.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [8] Undefined index: url D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 51 行.
+
+[ 2015-05-20T00:11:11+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [2] file_get_contents(https://api.weibo.com/2/statuses/update.json) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: Invalid argument D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2015-05-20T00:15:43+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+NOTIC: [2] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [2] file_get_contents(https://api.weibo.com/2/statuses/update.json) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: Invalid argument D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2015-05-20T00:18:41+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [2] fopen() [<a href='function.fopen'>function.fopen</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [2] fopen(https://api.weibo.com/2/statuses/update.json) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Invalid argument D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+
+[ 2015-05-20T00:19:39+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+NOTIC: [2] fopen() [<a href='function.fopen'>function.fopen</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [2] fopen(https://api.weibo.com/2/statuses/update.json) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Invalid argument D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [2] stream_get_contents() expects parameter 1 to be resource, boolean given D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 80 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001351s ]
+
+[ 2015-05-20T00:21:48+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+NOTIC: [2] fopen() [<a href='function.fopen'>function.fopen</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [2] fopen(https://api.weibo.com/2/statuses/update.json) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Invalid argument D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+
+[ 2015-05-20T00:22:51+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+NOTIC: [2] fopen() [<a href='function.fopen'>function.fopen</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [2] fopen(https://api.weibo.com/2/statuses/update.json) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Invalid argument D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: php_errormsg D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 78 行.
+ERR: Problem with https://api.weibo.com/2/statuses/update.json, 
+
+[ 2015-05-20T00:26:12+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+NOTIC: [2] fopen() [<a href='function.fopen'>function.fopen</a>]: Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [2] fopen(https://api.weibo.com/2/statuses/update.json) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: Invalid argument D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 76 行.
+NOTIC: [8] Undefined variable: php_errormsg D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 78 行.
+ERR: Problem with https://api.weibo.com/2/statuses/update.json, 
+
+[ 2015-05-20T00:31:39+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+
+[ 2015-05-20T00:32:35+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+
+[ 2015-05-20T00:39:14+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+
+[ 2015-05-20T00:41:16+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+NOTIC: [8] Undefined variable: referrer D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: request D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: refererr D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: result D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 86 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2015-05-20T00:41:57+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+
+[ 2015-05-20T00:42:14+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+NOTIC: [8] Undefined variable: request D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: refererr D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: result D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 86 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2015-05-20T00:42:56+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [8] Undefined variable: request D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: refererr D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: result D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 86 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2015-05-20T00:44:00+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [8] Undefined variable: request D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: refererr D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: result D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 86 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2015-05-20T00:44:02+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+NOTIC: [8] Undefined variable: request D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: refererr D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: result D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 86 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2015-05-20T00:44:36+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+NOTIC: [8] Undefined variable: request D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: refererr D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: cookien D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 78 行.
+NOTIC: [8] Undefined variable: result D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 86 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2015-05-20T00:47:39+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [8] Undefined variable: request D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: refererr D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: cookie D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 78 行.
+NOTIC: [8] Undefined variable: result D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 86 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2015-05-20T09:52:53+08:00 ] ::1 /scuthelper/3/index.php/Home/Index/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010116s ]
+NOTIC: [8] Undefined variable: request D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: refererr D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: cookie D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 78 行.
+NOTIC: [8] Undefined variable: result D:\wamp\Web\scuthelper\3\Application\Home\Controller\IndexController.class.php 第 86 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009118s ]
+

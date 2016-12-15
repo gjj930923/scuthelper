@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $('[id^=tab-]').hide();
+        $('#tab-1').show();
+        $('.weui_tabbar_item').click(function(){
+            $(this).addClass("weui_bar_item_on");
+            $(this).siblings(".weui_tabbar_item").removeClass(" weui_bar_item_on");
+            var id = $(this).attr('id').replace("tabbar-","");
+            $('[id^=tab-]').hide();
+            $('#tab-'+id).show();
+        });
+        $('#search_bar').click(function(){
+            $(this).addClass('weui_search_focusing');
+        });
+        $('#search_bar').focusout(function(){
+            $(this).removeClass(' weui_search_focusing');
+        });
+        <if condition="$user_info neq null">
+        $.post("/market/getUnsolved",{
+            user_id: '{$user_info.user_id}'
+        },function(data, status){
+            if(data.error == 0){
+                if(data.all > 0 && data.all <= 99){
+                    $('.all').html('我(<strong>'+data.all+'</strong>)');
+                }
+                else if(data.all > 99){
+                    $('.all').html('我(<strong>99+</strong>)');
+                }
+                if(data.orders_for_deal > 0 && data.orders_for_deal <= 99){
+                        $('.orders-for-deal').html(data.orders_for_deal+'条求购信息待处理');
+                }
+                else if(data.orders_for_deal > 99){
+                    $('.orders-for-deal').html('99+条求购信息待处理');
+                }
+                if(data.QAs_unsolved > 0 && data.QAs_unsolved <= 99){
+                    $('.qas-unsolved').html(data.QAs_unsolved+'条提问待处理');
+                }
+                else if(data.QAs_unsolved > 99){
+                    $('.qas-unsolved').html('99+条提问待处理');
+                }
+                if(data.unread_message > 0 && data.unread_message <= 99){
+                    $('.message-unread').html(data.unread_message+'条未读');
+                }
+                else if(data.unread_message > 99){
+                    $('.message-unread').html('99+条未读');
+                }
+            }
+        });
+        </if>
+    });
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;">
+<div class="weui_tab">
+    <div class="weui_tab_bd" id="tab-1">
+        <div class="weui_search_bar" id="search_bar">
+            <form class="weui_search_outer" method="get" action="/market/search">
+                <div class="weui_search_inner">
+                    <i class="weui_icon_search"></i>
+                    <input type="search" class="weui_search_input" id="name" name="name" placeholder="商品搜索" required/>
+                    <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+                </div>
+                <label for="name" class="weui_search_text" id="search_text">
+                    <i class="weui_icon_search"></i>
+                    <span>商品搜索</span>
+                </label>
+            </form>
+            <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
+        </div>
+        <if condition="$user_info eq null">
+            <div class="weui_cells weui_cells_access">
+                <a class="weui_cell" href="/market/login">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <p>登录后才能收藏或求购商品哦~</p>
+                    </div>
+                    <div class="weui_cell_ft">
+                        马上注册登录
+                    </div>
+                </a>
+            </div>
+        </if>
+        <div class="weui_panel">
+            <div class="weui_panel_hd">最新商品</div>
+            <div class="weui_panel_bd">
+                <foreach name="latest_products" item="vo" key="i">
+                    <a class="weui_media_box weui_media_appmsg" href="/market/product?product_id={$vo['product_id']}">
+                        <div class="weui_media_hd">
+                            <img class="weui_media_appmsg_thumb" src="{$vo['url']}/square.140" alt="">
+                        </div>
+                        <div class="weui_media_bd">
+                            <h4 class="weui_media_title">{$vo.name}</h4>
+                            <p class="weui_media_desc">{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> | 数量 {$vo['quantity'] - $vo['quantity_sold']} |
+                                <switch name="vo.fineness">
+                                    <case value="0">七成新以下</case>
+                                    <case value="1">七成新</case>
+                                    <case value="2">八成新</case>
+                                    <case value="3">九成新</case>
+                                    <case value="4">九五成新</case>
+                                    <case value="5">全新</case>
+                                    <default />新旧未知
+                                </switch>
+                            </p>
+                        </div>
+                    </a>
+                </foreach>
+            </div>
+            <div class="weui_panel_hd">热门商品</div>
+            <div class="weui_panel_bd">
+                <foreach name="hot_products" item="vo" key="i">
+                    <a class="weui_media_box weui_media_appmsg" href="/market/product?product_id={$vo['product_id']}">
+                        <div class="weui_media_hd">
+                            <img class="weui_media_appmsg_thumb" src="{$vo['url']}/square.140" alt="">
+                        </div>
+                        <div class="weui_media_bd">
+                            <h4 class="weui_media_title">{$vo.name}</h4>
+                            <p class="weui_media_desc">{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> | 数量 {$vo['quantity'] - $vo['quantity_sold']} |
+                                <switch name="vo.fineness">
+                                    <case value="0">七成新以下</case>
+                                    <case value="1">七成新</case>
+                                    <case value="2">八成新</case>
+                                    <case value="3">九成新</case>
+                                    <case value="4">九五成新</case>
+                                    <case value="5">全新</case>
+                                    <default />新旧未知
+                                </switch>
+                            </p>
+                        </div>
+                    </a>
+                </foreach>
+            </div>
+        </div>
+    </div>
+    <div class="weui_tab_bd" id="tab-2">
+        <div class="weui_panel">
+            <div class="weui_panel_hd">商品分类</div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=1">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>图书</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=2">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>音像软件</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=3">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>数码及配件</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=4">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>家居</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=5">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>电脑设备</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=6">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>办公及学生用品</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=7">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>票券</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=8">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>电器</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=9">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>美妆</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=10">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>食品</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=11">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>运动户外</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=12">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>服装</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=13">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>鞋靴</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=14">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>箱包</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=15">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>手表眼镜</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/type?category=16">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>虚拟物品</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weui_tab_bd" id="tab-3">
+        <div class="weui_panel">
+            <div class="weui_panel_hd">个人中心</div>
+            <empty name="user_info">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/login">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>注册或登录</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </empty>
+        </div>
+        <notempty name="user_info">
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/release">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>发布商品</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><br></div>
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/ordersAndProducts">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>我的商品与求购</p>
+                            </div>
+                            <span class="weui_cell_ft orders-for-deal"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/QAs">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>问答处理</p>
+                            </div>
+                            <span class="weui_cell_ft qas-unsolved"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/favorite">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>我的收藏</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/msgbox">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>收件箱</p>
+                            </div>
+                            <span class="weui_cell_ft message-unread"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><br></div>
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/modifyPersonalInfo">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>个人信息修改</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/password">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>密码修改</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </notempty>
+        <div><br></div>
+        <div class="weui_panel">
+            <div class="weui_panel_bd">
+                <div class="weui_media_box weui_media_small_appmsg">
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="/market/feedback">
+                            <div class="weui_cell_hd"><img src=""></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>意见反馈</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><br></div>
+        <notempty name="user_info">
+        <a href="/market/logout" class="weui_btn weui_btn_warn">退出登录</a>
+        </notempty>
+    </div>
+    <div class="weui_tabbar">
+        <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on" id="tabbar-1">
+            <div class="weui_tabbar_icon">
+                <img src="../icon/icon_nav_button.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">猜你喜欢</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item" id="tabbar-2">
+            <div class="weui_tabbar_icon">
+                <img src="../icon/icon_nav_msg.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">商品分类</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item" id="tabbar-3">
+            <div class="weui_tabbar_icon">
+                <img src="../icon/icon_nav_cell.png" alt="">
+            </div>
+            <p class="weui_tabbar_label all">我</p>
+        </a>
+    </div>
+</div>
+</body>
+</html>

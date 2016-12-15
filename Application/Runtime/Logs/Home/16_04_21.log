@@ -1,0 +1,2311 @@
+[ 2016-04-21T00:00:05+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.019001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.033002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.034002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-04-21T00:00:05+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.032002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.040003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.049003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.049003s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-04-21T00:00:06+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.032002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.043002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.043002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-04-21T00:01:13+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.023001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-04-21T00:01:14+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.052003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.045002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.068004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.054003s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-21T00:01:14+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.030002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.044003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.041002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:02:14+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.025002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:02:15+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.042003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.052003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.051003s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:02:16+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.038003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.047002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.063004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.061003s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-21T00:02:35+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.023002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:02:36+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.036003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.042002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.056004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.053003s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-21T00:02:37+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.057003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.058004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.071004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.065004s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:02:45+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.026002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.024001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-21T00:02:45+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.057003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.063004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.075004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.073005s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-21T00:02:46+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.024001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.034002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.032002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-21T00:04:16+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.025001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:04:53+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.023002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:05:25+08:00 ] ::1 /scuthelper/3/market/release/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.023002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:05:25+08:00 ] ::1 /scuthelper/3/market/release/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.020002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-21T00:06:11+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.026002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:06:21+08:00 ] ::1 /scuthelper/3/market/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.046002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.043003s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:07:00+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.026001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.024001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-04-21T00:10:22+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.021002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-21T00:11:45+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.022002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-21T00:12:27+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.022001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:13:04+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.019002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-21T00:17:04+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.023001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:23:17+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.022002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:26:00+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.026001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.026001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T00:26:47+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.018600s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-21T00:27:18+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.023002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:00:18+08:00 ] ::1 /scuthelper/3/market/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: original_url E:\wamp\www\scuthelper\3\Application\Home\Controller\PersonalController.class.php 第 112 行.
+NOTIC: [8] Undefined index: alert E:\wamp\www\scuthelper\3\Application\Home\Controller\PersonalController.class.php 第 113 行.
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\PersonalController.class.php 第 120 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.042003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.032002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.072005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.061004s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:00:19+08:00 ] ::1 /scuthelper/3/market/Application/Home/View/Image/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.1030s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.040002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.051003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.064004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.060004s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:00:19+08:00 ] ::1 /scuthelper/3/market/Application/Home/View/Image/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.029001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.039002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.037002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:00:28+08:00 ] ::1 /scuthelper/3/market/loginCertify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: original_url E:\wamp\www\scuthelper\3\Application\Home\Controller\PersonalController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `users` WHERE ( student_id=22229 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `users` SET `last_login_time`='2016-04-21 23:00:28' WHERE ( student_id=22229 ) [ RunTime:0.0680s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\PersonalController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:00:29+08:00 ] ::1 /scuthelper/3/market/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.031002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.041003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.038002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:00:30+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.028002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.037002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.036002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:00:37+08:00 ] ::1 /scuthelper/3/market/releae
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.027002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.040002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.038002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-21T23:00:37+08:00 ] ::1 /scuthelper/3/market/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY time desc LIMIT 8   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `pictures` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `products` WHERE ( is_deleted=0 AND quantity > quantity_sold ) ORDER BY times_read desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=10 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pictures` WHERE ( subsequence=1 AND product_id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ScutController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.033002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.040002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.050003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.049003s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:00:43+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.032002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.046003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.046003s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:35:47+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.062004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.055004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.061004s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-21T23:46:23+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.022001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.020001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:49:41+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.021001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-21T23:52:06+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.022001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-21T23:54:43+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.020001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-21T23:55:41+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: Result too large E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.020000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.033000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.039001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-21T23:56:34+08:00 ] ::1 /scuthelper/3/market/release
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `users` WHERE ( user_id=21 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] file_get_contents(isMobile?user_agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0): failed to open stream: No such file or directory E:\wamp\www\scuthelper\3\Application\Home\Controller\ProductsController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.020002s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php:95) E:\wamp\www\scuthelper\3\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

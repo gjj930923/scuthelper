@@ -1,0 +1,12 @@
+[ 2016-03-15T23:37:55+08:00 ] 127.0.0.1 /scuthelper/3/img/people.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Img
+
+[ 2016-03-15T23:37:55+08:00 ] 127.0.0.1 /scuthelper/3/img/a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Img
+

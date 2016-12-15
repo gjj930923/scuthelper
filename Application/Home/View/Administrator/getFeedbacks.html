@@ -1,0 +1,90 @@
+<script>
+    $(document).ready(function () {
+        $('[id^=mark_unread-]').hide();
+        $('[id^=mark_read-],[id^=reply_feedback-]').click(function(){
+            var feedback_id = $(this).attr("id").replace("mark_read-","").replace("reply_feedback-","");
+            $.post("feedbacks/markread",{
+                feedback_id:feedback_id
+            },function(){
+                $('#mark_read-'+feedback_id).hide();
+                $('#mark_unread-'+feedback_id).show();
+            });
+        });
+        $('[id^=mark_unread-]').click(function(){
+            var feedback_id = $(this).attr("id").replace("mark_unread-","");
+            $.post("feedbacks/markread",{
+                feedback_id:feedback_id
+            },function(){
+                $('#mark_unread-'+feedback_id).hide();
+                $('#mark_read-'+feedback_id).show();
+            });
+        });
+    })
+</script>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <ul class="nav nav-list">
+                <li>
+                    <a href="dashboard">Dashboard</a>
+                </li>
+                <li>
+                    <a href="latestProducts">昨日商品列表</a>
+                </li>
+                <li>
+                    <a href="sendMessage">发送信息</a>
+                </li>
+                <li>
+                    <a href="feedbacks">反馈管理</a>
+                </li>
+                <li>
+                    <a href="settings">参数设置</a>
+                </li>
+            </ul>
+        </div>
+        <div class="span9">
+            <h3>
+                反馈处理
+            </h3>
+            <table class="table table-condensed table-hover table-striped">
+                <thead>
+                <tr>
+                    <th>
+                        反馈内容
+                    </th>
+                    <th>
+                        反馈时间
+                    </th>
+                    <th>
+                        操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <volist name="unreadFeedbacks" id="vo">
+                        <tr class="success">
+                            <td>
+                                {$vo.content}
+                            </td>
+                            <td>
+                                {$vo.release_time}
+                            </td>
+                            <td>
+                                <a href="sendMessage?id={$vo.sender_id}&title=RE:{$vo.content}" target="_blank">
+                                    <button id="reply_feedback-{$vo.feedback_id}" class="btn btn-success" type="button">回复反馈</button>
+                                </a>
+                                    <button id="mark_read-{$vo.feedback_id}" class="btn btn-primary" type="button">标记为已读</button>
+                                    <button id="mark_unread-{$vo.feedback_id}" class="btn" type="button">标记为未读</button>
+                            </td>
+                        </tr>
+                    </volist>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

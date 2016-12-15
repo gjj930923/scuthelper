@@ -1,0 +1,18 @@
+[ 2016-02-24T00:26:17+08:00 ] 127.0.0.1 /scuthelper/3/index.php/signinCerfity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:SigninCerfity
+
+[ 2016-02-24T12:27:18+08:00 ] 127.0.0.1 /scuthelper/3/index.php/Application/Home/View/Image/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-02-24T12:27:18+08:00 ] 127.0.0.1 /scuthelper/3/index.php/Application/Home/View/Image/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+

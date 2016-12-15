@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>XXX类</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="{$Think.server.script_name}/../Application/Home/View/Public/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="{$Think.server.script_name}/../Application/Home/View/Public/css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="{$Think.server.script_name}/../Application/Home/View/Public/css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <h3 align="center">Left here</h3>
+      </div>
+      <a href="#" class="button button-big button-round">登录</a>
+      <a href="#" class="button button-big button-round">注册</a>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+          <div class="left">
+              <!-- Left link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+            <div class="center sliding">XXX类</div>
+            
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <!-- Search bar-->
+            <form class="searchbar" action="" method="GET">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+    </form>
+    <div class="searchbar-overlay"></div>
+            <div class="page-content">
+            
+<div class="content-block-title">XXX小类</div>
+<div class="list-block media-list">
+  <ul>
+    <li>
+    <a href="#" class="item-link item-content">
+        <div class="item-media"><img src="..." width="44"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">Heading</div>
+          </div>
+          <div class="item-subtitle">888元</div>
+        </div>
+     </a>
+    </li>
+  </ul>
+</div>
+
+<!-- List View -->
+<div class="content-block-title">分类列表</div>
+<div class="list-block accordion-list">
+  <ul>
+    <li class="accordion-item"><a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">Item 1</div>
+        </div></a>
+      <div class="accordion-item-content">
+<!-- 子菜单 -->
+<div class="list-block">
+  <ul>
+    <li>
+      <a href="#" class="item-link item-content">
+        <div class="item-inner">
+          <div class="item-after">Another label</div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div><!-- 子菜单结束 -->
+      </div>
+    </li>
+    <li class="accordion-item"><a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">Item 2</div>
+        </div></a>
+      <div class="accordion-item-content">
+<!-- 子菜单 -->
+<div class="list-block">
+  <ul>
+    <li>
+      <a href="#" class="item-link item-content">
+        <div class="item-inner">
+          <div class="item-after">Another label</div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div><!-- 子菜单结束 -->
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar tabbar">
+          <div class="toolbar-inner">
+          <a href="#tab1" class="tab-link">
+            <span class="tabbar-label-through">网址导航</span>
+        </a>
+        <a href="#tab2" class="tab-link active">
+            <span class="tabbar-label-through">二手市场</span>
+        </a></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="{$Think.server.script_name}/../Application/Home/View/Public/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="{$Think.server.script_name}/../Application/Home/View/Public/js/my-app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $('[id^=nav-]').hide();
+        $('#nav-1').show();
+        $('[id^=qa_solve_form-]').hide();
+        $('[id^=QAs_unsolved-]').click(function(){
+            $('[id^=qa_solve_form-]').hide();
+            var qa_id = $(this).attr('id').replace("QAs_unsolved-","");
+            $('#qa_solve_form-'+qa_id).show();
+            $('#qa_solve_form-'+qa_id+' .question').hide();
+        });
+        $('.weui_navbar_item').click(function(){
+            $(this).addClass('weui_bar_item_on');
+            $(this).siblings('.weui_navbar_item').removeClass(' weui_bar_item_on');
+            var id = $(this).attr('id').replace("navbar-","");
+            $('[id^=nav-]').hide();
+            $('#nav-'+id).show();
+        });
+        $('[id^=is_public-]').change(function(){
+            var qa_id = $(this).attr('id').replace("is_public-","");
+            if($(this).is(':checked')) {
+                $("#qa_solve_form-"+qa_id+" .question").show();
+            }
+            else{
+                $("#qa_solve_form-"+qa_id+" .question").hide();
+            }
+        });
+        $('[id^=answer_submit-]').click(function(){
+            var qa_id = $(this).attr('id').replace("answer_submit-","");
+            var is_public = 0;
+            if($('#is_public-'+qa_id).is(':checked')) {
+                is_public = 1;
+            }
+            $.post("answerQuestion",
+                    {
+                        user_id:'{$user_info.user_id}',
+                        question_id:$('#qa_solve_form-'+qa_id+' #QA_id').val(),
+                        answer:$('#qa_solve_form-'+qa_id+' #answer').val(),
+                        is_public:is_public,
+                        question:$('#qa_solve_form-'+qa_id+' #question').val()
+                    },
+                    function (data,status){
+                        switch(data){
+                            case "-1":
+                                $.weui.topTips('参数错误');
+                                break;
+                            case "-2":
+                                $.weui.topTips('回答内容不得为空');
+                                break;
+                            case "-3":
+                                $.weui.topTips('问题文本不得为空');
+                                break;
+                            case "-4":
+                                $.weui.topTips('该问题已被提问者删除');
+                                break;
+                            case "-5":
+                                $.weui.topTips('内部服务器错误');
+                                break;
+                            case "0":
+                                $.weui.topTips('提交成功');
+                                $('[id^=qa_solve_form-]').hide();
+                                $('#QAs_unsolved-'+qa_id).hide();
+                                break;
+                        }
+                    }
+            );
+        });
+        $('[id^=cancel_submit-]').click(function(){
+            $('[id^=qa_solve_form-]').hide();
+        });
+        $('[id^=QAs_solved-]').click(function(){
+            var qa_id = $(this).attr('id').replace('QAs_solved-','');
+            $.weui.alert('提问时间：'+$('#QAs_solved-'+qa_id+' #release_time').val()+'<br>回答：'+$('#QAs_solved-'+qa_id+' #answer').val(),
+                    {title:$('#QAs_solved-'+qa_id+' #question').val()},
+                    function () {}
+            );
+        });
+        $('[id^=QAs_user-]').click(function(){
+            if($(this).children('#status').val() == 0){
+                var qa_id = $(this).children('#qa_id').val();
+                $.weui.actionSheet([{
+                    label: '删除该提问',
+                    onClick: function (){
+                        $.weui.confirm('确认删除?', {title: '确认删除该提问'}, function (){
+                            console.log('1');
+                            $.post("deleteQuestion",
+                                    {
+                                        user_id:'{$user_info.user_id}',
+                                        question_id:qa_id
+                                    },
+                                    function (data,status){
+                                        console.log('switch:'+data);
+                                        switch(data){
+                                            case "0":
+                                                $('#QAs_user-'+qa_id).remove();
+                                                $.weui.topTips('删除成功');
+                                                break;
+                                            default:
+                                                $.weui.topTips('删除失败');
+                                        }
+                                    }
+                            );
+                        }, function (){
+                        });
+
+                    }
+                }]);
+            }
+            else{
+                $.weui.alert('回答：'+$(this).children('#answer').val(),
+                        {title:$(this).children('#question').val()},
+                        function () {}
+                );
+            }
+        });
+    });
+
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<div class="weui_tab">
+    <div class="weui_navbar" style="margin-top: 50px;">
+        <div class="weui_navbar_item weui_bar_item_on" id="navbar-1">
+            未解决
+        </div>
+        <div class="weui_navbar_item" id="navbar-2">
+            已解决
+        </div>
+        <div class="weui_navbar_item" id="navbar-3">
+            我的提问
+        </div>
+    </div>
+    <div class="weui_tab_bd" id="nav-1">
+        <div class="weui_panel" style="margin-top: 50px;">
+            <div class="weui_panel_bd">
+                <div class="weui_cell weui_cell_switch">
+                    <div class="weui_cell_hd weui_cell_primary">点击问题即可填写问题回答内容</div>
+                </div>
+                <volist name="QAs_unsolved" id="vo">
+                    <div class="weui_media_box weui_media_text" id="QAs_unsolved-{$vo.qa_id}">
+                        <h4 class="weui_media_title">{$vo.question}</h4>
+                        <p class="weui_media_desc">{$vo.name} | {$vo.release_time}</p>
+                    </div>
+                    <div class="weui_cells weui_cells_form" id="qa_solve_form-{$vo.qa_id}" style="margin-top: 0px;">
+                        <div class="weui_cell">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <textarea id="answer" name="answer" class="weui_textarea" placeholder="回答内容" rows="4"></textarea>
+                                <div class="weui_textarea_counter"><span>回答内容限250字</span></div>
+                            </div>
+                        </div>
+                        <div class="weui_cell weui_cell_switch">
+                            <div class="weui_cell_hd weui_cell_primary">是否在商品详情页公开？</div>
+                            <div class="weui_cell_ft">
+                                <input class="weui_switch" type="checkbox" id="is_public-{$vo.qa_id}">
+                            </div>
+                        </div>
+                        <div class="weui_cell question">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <textarea id="question" name="question" class="weui_textarea" placeholder="提问内容" rows="2">{$vo.question}</textarea>
+                                <div class="weui_textarea_counter"><span>可修改提问内容，限50字</span></div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="QA_id" value="{$vo.qa_id}"/>
+                        <input type="hidden" id="QA_id" value="{$vo.qa_id}"/>
+                        <a href="javascript:;" class="weui_btn weui_btn_primary" id="answer_submit-{$vo.qa_id}">提交</a>
+                        <a href="javascript:;" class="weui_btn weui_btn_warn" id="cancel_submit-{$vo.qa_id}">取消</a>
+                    </div>
+                </volist>
+            </div>
+        </div>
+    </div>
+    <div class="weui_tab_bd" id="nav-2">
+        <div class="weui_panel" style="margin-top: 50px;">
+            <div class="weui_panel_bd" style="margin-top: 50px;">
+                <volist name="QAs_solved" id="vo">
+                    <div class="weui_media_box weui_media_text" id="QAs_solved-{$vo.qa_id}">
+                        <h4 class="weui_media_title">{$vo.question}</h4>
+                        <p class="weui_media_desc">{$vo.name} | {$vo.modify_time}回答</p>
+                        <input type="hidden" value="{$vo.release_time}" id="release_time"/>
+                        <input type="hidden" value="{$vo.answer}" id="answer"/>
+                        <input type="hidden" value="{$vo.question}" id="question"/>
+                    </div>
+                </volist>
+            </div>
+        </div>
+    </div>
+    <div class="weui_tab_bd" id="nav-3">
+        <div class="weui_panel" style="margin-top: 50px;">
+            <div class="weui_panel_bd" style="margin-top: 50px;">
+                <volist name="QAs_user" id="vo">
+                    <div class="weui_media_box weui_media_text " id="QAs_user-{$vo.qa_id}">
+                        <h4 class="weui_media_title">{$vo.question}</h4>
+                        <p class="weui_media_desc">{$vo.name} | {$vo.release_time}提问 |
+                            <if condition="$vo.status eq 0">
+                                <strong>未回答</strong>
+                            <elseif condition="$vo.status eq 2"/>已回答
+                            <else/>商品已被删除
+                            </if>
+                        </p>
+                        <input type="hidden" value="{$vo.status}" id="status"/>
+                        <input type="hidden" value="{$vo.release_time}" id="release_time"/>
+                        <input type="hidden" value="{$vo.answer}" id="answer"/>
+                        <input type="hidden" value="{$vo.question}" id="question"/>
+                        <input type="hidden" value="{$vo.qa_id}" id="qa_id"/>
+                    </div>
+                </volist>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

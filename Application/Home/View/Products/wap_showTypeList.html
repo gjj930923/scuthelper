@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+        $('#page').change(function(){
+            window.location.href = window.location.href+"&page="+$('#page').val();
+        });
+    });
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;padding-top: 40px;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<div class="weui_tab_bd">
+    <div class="weui_panel">
+        <div class="weui_panel_hd">{$title}</div>
+        <div class="weui_panel_bd">
+            <foreach name="products" item="vo" key="i">
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg" href="/market/product?product_id={$vo['product_id']}">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="{$vo['url']}/square.140" alt="">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">{$vo.name}</h4>
+                        <p class="weui_media_desc">{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> | 数量 {$vo['quantity'] - $vo['quantity_sold']} |
+                            <switch name="vo.fineness">
+                                <case value="0">七成新以下</case>
+                                <case value="1">七成新</case>
+                                <case value="2">八成新</case>
+                                <case value="3">九成新</case>
+                                <case value="4">九五成新</case>
+                                <case value="5">全新</case>
+                                <default />新旧未知
+                            </switch>
+                        </p>
+                    </div>
+                </a>
+            </foreach>
+        </div>
+        <if condition="$num_pages gt 1">
+            <ul data-am-widget="pagination" class="am-pagination am-pagination-select">
+                <li class="am-pagination-prev ">
+                    <if condition="$page gt 1">
+                        <a href="/market/favorite?page={$page-1}" class="">上一页</a>
+                        <else/>
+                        <a href="#" class="">上一页</a>
+                    </if>
+                </li>
+                <li class="am-pagination-select">
+                    <select id="page" name="page">
+                        <for start="1" end="$num_pages+1">
+                            <option value="{$i}" class="" <if condition="$i eq $page">selected</if>>{$i}
+                            /{$num_pages}
+                            </option>
+                        </for>
+                    </select>
+                </li>
+                <li class="am-pagination-next">
+                    <if condition="$page lt $num_pages">
+                        <a href="/market/favorite?page={$page+1}" class="">下一页</a>
+                        <else/>
+                        <a href="#" class="">下一页</a>
+                    </if>
+                </li>
+            </ul>
+        </if>
+    </div>
+</div>
+</body>
+</html>

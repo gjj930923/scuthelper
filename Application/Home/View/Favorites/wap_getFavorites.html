@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $('#page').change(function(){
+            var array = window.location.href.split('?');
+            window.location.href = array[0]+"?page="+$('#page').val();
+        });
+        $('[id^=product-]').click(function(){
+            var product_id = $(this).attr('id').replace('product-','');
+            if($(this).children('#is_deleted').val() == 0){
+                $.weui.actionSheet([{
+                    label: '查看商品详情',
+                    onClick: function (){
+                        window.location.href = "/market/product?product_id="+product_id;
+                    }
+                },{
+                    label: '取消收藏此商品',
+                    onClick: function (){
+                        $.weui.confirm('是否取消收藏？',{title:'取消收藏提示'},
+                                function(){
+                                    $.post("modifyFavorite",
+                                            {
+                                                user_id:'{$user_info.user_id}',
+                                                product_id:product_id
+                                            },function (data,status){
+                                                if(data == 1){
+                                                    $('#product-'+product_id).remove();
+                                                }
+                                            }
+                                    );
+                                },function(){}
+                        );
+                    }
+                }]);
+            }
+            else{
+                $.weui.confirm('是否取消收藏？',{title:'取消收藏提示'},
+                        function(){
+                            $.post("modifyFavorite",
+                                    {
+                                        user_id:'{$user_info.user_id}',
+                                        product_id:product_id
+                                    },function (data,status){
+                                        if(data == 1){
+                                            $('#product-'+product_id).remove();
+                                        }
+                                    }
+                            );
+                        },function(){}
+                );
+            }
+        });
+    });
+
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;padding-top: 40px;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<if condition="$products neq null">
+    <ul data-am-widget="pagination" class="am-pagination am-pagination-select">
+        <li class="am-pagination-prev ">
+            <if condition="$page gt 1">
+                <a href="/market/favorite?page={$page-1}" class="">上一页</a>
+                <else/>
+                <a href="#" class="">上一页</a>
+            </if>
+        </li>
+        <li class="am-pagination-select">
+            <select id="page" name="page">
+                <for start="1" end="$num_pages+1">
+                    <option value="{$i}" class="" <if condition="$i eq $page">selected</if>>{$i}
+                    /{$num_pages}
+                    </option>
+                </for>
+            </select>
+        </li>
+        <li class="am-pagination-next">
+            <if condition="$page lt $num_pages">
+                <a href="/market/favorite?page={$page+1}" class="">下一页</a>
+                <else/>
+                <a href="#" class="">下一页</a>
+            </if>
+        </li>
+    </ul>
+</if>
+<if condition="$products eq null">
+    <a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_default" style="margin-top: 10px;">空空如也！</a>
+</if>
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_bd">
+        <foreach name="products" item="vo" key="i">
+            <div class="weui_media_box weui_media_text" id="product-{$vo['product_id']}">
+                <h4 class="weui_media_title"><if condition="vo.is_deleted neq 0">【已删除】</if>{$vo.name}</h4>
+                <p class="weui_media_desc">{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> | 数量 {$vo['quantity'] - $vo['quantity_sold']} |
+                    <switch name="vo.fineness">
+                        <case value="0">七成新以下</case>
+                        <case value="1">七成新</case>
+                        <case value="2">八成新</case>
+                        <case value="3">九成新</case>
+                        <case value="4">九五成新</case>
+                        <case value="5">全新</case>
+                        <default />新旧未知
+                    </switch>
+                </p>
+                <input type="hidden" id="is_deleted" value="{$vo['is_deleted']}">
+            </div>
+        </foreach>
+    </div>
+</div>
+<if condition="($products neq null) AND (count($products) gt 7)">
+    <ul data-am-widget="pagination" class="am-pagination am-pagination-select">
+        <li class="am-pagination-prev ">
+            <if condition="$page gt 1">
+                <a href="/market/favorite?page={$page-1}" class="">上一页</a>
+                <else/>
+                <a href="#" class="">上一页</a>
+            </if>
+        </li>
+        <li class="am-pagination-select">
+            <select id="page" name="page">
+                <for start="1" end="$num_pages+1">
+                    <option value="{$i}" class="" <if condition="$i eq $page">selected</if>>{$i}
+                    /{$num_pages}
+                    </option>
+                </for>
+            </select>
+        </li>
+        <li class="am-pagination-next">
+            <if condition="$page lt $num_pages">
+                <a href="/market/favorite?page={$page+1}" class="">下一页</a>
+                <else/>
+                <a href="#" class="">下一页</a>
+            </if>
+        </li>
+    </ul>
+</if>
+</body>
+</html>

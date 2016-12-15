@@ -1,0 +1,79 @@
+<script>
+	$(document).ready(function() {
+		$('#page').change(function(){
+			window.location.href = window.location.href+"&page="+$('#page').val();
+		});
+	});
+</script>
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<ul class="breadcrumb">
+				<li>
+					<a href="/market">主页</a> <span class="divider">/</span>
+				</li>
+				<li>
+					{$type_name}
+				</li>
+				<if condition="branch_type_name neq null">
+					<li>
+						<span class="divider">/</span>{$branch_type_name}
+					</li>
+				</if>
+
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span2">
+			<div class="accordion" id="category_list">
+				<div class="accordion-heading">
+					<div onfocus="this.blur();" class="accordion-toggle collapsed" data-parent="#category_list"><strong>---分类列表---</strong></div>
+				</div>
+				<div class="accordion-group">
+					<volist name="category_list" id="vo">
+						{$vo['html']}
+					</volist>
+				</div>
+			</div>
+		</div>
+		<div class="span10">
+			<div class="container"></div>
+				<volist name="products" id="vo" empty="空空如也~">
+					<div class="span3" style="margin:10px;">
+						<div class="thumbnail">
+							<a target="_blank" href="product?product_id={$vo['product_id']}"><img alt="300x225" src="{$vo['url']}/rectangle.300"  style="width: 220px;height: 150px;"/></a>
+							<div class="caption">
+								<h4>
+									<a target="_blank" href="product?product_id={$vo['product_id']}">{$vo.name}</a>
+								</h4>
+								<p>
+									{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> |
+									数量 {$vo['quantity'] - $vo['quantity_sold']} |
+									<switch name="vo.fineness">
+										<case value="0">七成新以下</case>
+										<case value="1">七成新</case>
+										<case value="2">八成新</case>
+										<case value="3">九成新</case>
+										<case value="4">九五成新</case>
+										<case value="5">全新</case>
+										<default />新旧未知
+									</switch>
+								</p>
+							</div>
+						</div>
+					</div>
+				</volist>
+			</div>
+		<if condition="$num_pages gt 1">
+			<div class="controls" align="right">
+				<select id="page" name="page" class="input-small">
+					<for start="1" end="$num_pages+1">
+						<option value="{$i}" <if condition="$i eq $page">selected</if>>第{$i}页</option>
+					</for>
+				</select>
+			</div>
+		</if>
+		</div>
+	</div>
+</div>

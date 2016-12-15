@@ -1,0 +1,106 @@
+<script>
+	$(document).ready(function() {
+		$("[id^='message_title-']").click(function () {
+			var message_id = $(this).attr('id').replace('message_title-','');
+			$.post("markAsRead",
+				{
+					user_id:'{$user_info.user_id}',
+					message_id:$('#message_title-'+message_id+' input').val()
+				}, function(data,status){
+					//alert("Data: " + data + "\nStatus: " + status);
+
+				});
+			var title = $(this).html().replace("<strong>","").replace("</strong>","");
+			$(this).html(title);
+		});
+		$('#page').change(function(){
+			window.location.href = "msgbox?page="+$('#page').val();
+		});
+	});
+</script>
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<ul class="breadcrumb">
+				<li>
+					<a href="/market">主页</a> <span class="divider">/</span>
+				</li>
+				<li class="active">
+					个人中心 <span class="divider">/</span>
+				</li>
+				<li class="active">
+					收件箱
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span2">
+			<ul class="nav nav-list">
+				<li>
+					<a href="/market/ordersAndProducts">我的商品与求购</a>
+				</li>
+				<li>
+					<a href="/market/favorite">我的收藏</a>
+				</li>
+				<li>
+					<a href="/market/QAs">问答处理</a>
+				</li>
+				<li>
+					<a href="/market/modifyPersonalInfo">个人信息修改</a>
+				</li>
+				<li>
+					<a href="/market/password">密码修改</a>
+				</li>
+				<li class="active">
+					<a href="#">收件箱</a>
+				</li>
+				<li>
+					<a href="/market/feedback">意见反馈</a>
+				</li>
+			</ul>
+		</div>
+		<div class="span10">
+			<div class="accordion" id="message_list">
+				<volist name="messages" id="vo" empty="没有信息~">
+					<div class="accordion-group">
+						<div class="accordion-heading" id="message_title-{$vo['message_id']}">
+							<a class="accordion-toggle" data-parent="#message_list" data-toggle="collapse" href="#message-{$vo['message_id']}">
+								<if condition="$vo.is_read eq 0">
+									<strong>{$vo['title']}</strong>
+									<else/>{$vo['title']}
+								</if>
+								<span class="label label-warning pull-right">{$vo['nickname']}</span>
+								<span class="label label-info pull-right">{$vo['send_time']}</span>
+								<input type="hidden" value="{$vo['message_id']}">
+							</a>
+						</div>
+						<div class="accordion-body collapse" id="message-{$vo['message_id']}">
+							<div class="accordion-inner">
+								{$vo['content']}
+							</div>
+						</div>
+					</div>
+				</volist>
+
+			</div>
+			<div>
+				<if condition="$messages neq null">
+					<div class="col-md-6">
+						<select id="page" name="page" class="input-small">
+							<for start="1" end="$num_pages+1">
+								<option value="{$i}" <if condition="$i eq $page">selected</if>>第{$i}页</option>
+							</for>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<form action="markAllAsRead" method="post">
+							<input id="user_id" name="user_id" value="{$user_info.user_id}" type="hidden">
+							<button class="btn btn-primary" type="submit">全部标记为已读</button>
+						</form>
+					</div>
+				</if>
+			</div>
+		</div>
+	</div>
+</div>

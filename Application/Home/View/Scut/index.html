@@ -1,0 +1,117 @@
+<div class="container">
+	<div class="row">
+		<div class="span7"></div>
+		<div class="span3">
+			<form class="form-search" method="get" action="/market/search">
+				<input id="name" name="name" class="input-large search-query" type="text" placeholder="搜索商品…… 回车键发起搜索"/>
+			</form>
+		</div>
+		<div class="span2">
+			<div class="btn-group">
+				<a href="/market/search" class="btn btn-primary">高级搜索</a>
+				<a href="/market/release" class="btn btn-warning">发布商品</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<nav class="navbar navbar-default" role="navigation">
+				<div>
+					<ul class="nav">
+						<li><a href="/market/type?category=1">图书</a></li>
+						<li><a href="/market/type?category=2">音像软件</a></li>
+						<li><a href="/market/type?category=3">数码及配件</a></li>
+						<li><a href="/market/type?category=4">家居</a></li>
+						<li><a href="/market/type?category=5">电脑设备</a></li>
+						<li><a href="/market/type?category=6">办公及学生用品</a></li>
+						<li><a href="/market/type?category=7">票券</a></li>
+						<li><a href="/market/type?category=8">电器</a></li>
+						<li><a href="/market/type?category=9">美妆</a></li>
+						<li><a href="/market/type?category=10">食品</a></li>
+						<li><a href="/market/type?category=11">运动户外</a></li>
+						<li><a href="/market/type?category=12">服装</a></li>
+						<li><a href="/market/type?category=13">鞋靴</a></li>
+						<li><a href="/market/type?category=14">箱包</a></li>
+						<li><a href="/market/type?category=15">手表眼镜</a></li>
+						<li><a href="/market/type?category=16">虚拟物品</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<h2 class="text-center">
+				最新商品
+			</h2>
+			<h5 class="text-right">
+
+			</h5>
+			<div class="row">
+				<foreach name="latest_products" item="vo" key="i">
+					<div class="span3">
+						<div class="thumbnail" style="margin-top: 20px;">
+							<a target="_blank" href="/market/product?product_id={$vo['product_id']}"><img alt="300x225" src="{$vo['url']}/rectangle.300" style="height: 150px;width: 225px"/></a>
+							<div class="caption">
+								<h5>
+									<a target="_blank" href="/market/product?product_id={$vo['product_id']}">{$vo.name}</a>
+								</h5>
+								<p>
+									{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> |
+									数量 {$vo['quantity'] - $vo['quantity_sold']} |
+									<switch name="vo.fineness">
+										<case value="0">七成新以下</case>
+										<case value="1">七成新</case>
+										<case value="2">八成新</case>
+										<case value="3">九成新</case>
+										<case value="4">九五成新</case>
+										<case value="5">全新</case>
+										<default />新旧未知
+									</switch>
+								</p>
+							</div>
+						</div>
+					</div>
+				</foreach>
+			</div>
+			<div class="row">
+				<div class="span12">
+					<h2 class="text-center">
+						热门商品
+					</h2>
+					<h5 class="text-right">
+
+					</h5>
+					<div class="row">
+						<foreach name="hot_products" item="vo" key="i">
+							<div class="span3">
+								<div class="thumbnail" style="margin-bottom: 20px;">
+									<a target="_blank" href="/market/product?product_id={$vo['product_id']}"><img alt="300x225" src="{$vo['url']}/rectangle.300" style="height: 150px;width: 225px"/></a>
+									<div class="caption">
+										<h5>
+											<a target="_blank" href="/market/product?product_id={$vo['product_id']}">{$vo.name}</a>
+										</h5>
+										<p>
+											{$vo['min_price']}元<if condition="$vo['min_price'] lt $vo['max_price']">起</if> |
+											数量 {$vo['quantity'] - $vo['quantity_sold']} |
+											<switch name="vo.fineness">
+												<case value="0">七成新以下</case>
+												<case value="1">七成新</case>
+												<case value="2">八成新</case>
+												<case value="3">九成新</case>
+												<case value="4">九五成新</case>
+												<case value="5">全新</case>
+												<default />新旧未知
+											</switch>
+										</p>
+									</div>
+								</div>
+							</div>
+						</foreach>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	

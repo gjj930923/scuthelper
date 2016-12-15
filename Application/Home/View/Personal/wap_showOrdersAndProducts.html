@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{$title}</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/amazeui.css"/>
+    <link rel="stylesheet" href="../css/amazeui.datetimepicker.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/weui.js"></script>
+    <script src="../js/vconsole.min.js"></script>
+    <script src="../js/amazeui.datetimepicker.min.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $('[id^=nav-]').hide();
+        $('#nav-1').show();
+        $(".order_deleted").hide();
+        $('[id^=order_acception_form-]').hide();
+        $('[id^=order_rejection_form-]').hide();
+        $('[id^=address_list-]').hide();
+        $('.weui_navbar_item').click(function(){
+            $(this).addClass('weui_bar_item_on');
+            $(this).siblings('.weui_navbar_item').removeClass(' weui_bar_item_on');
+            var id = $(this).attr('id').replace("navbar-","");
+            $('[id^=nav-]').hide();
+            $('#nav-'+id).show();
+        });
+        $("#deleted_exception").change(function(){
+            if($(this).is(':checked')) {
+                $(".order_deleted").hide();
+            }
+            else{
+                $(".order_deleted").show();
+            }
+        });
+
+        $('[id^=product_info-]').click(function(){
+            var product_id = $(this).attr('id').replace('product_info-','');
+            $.weui.actionSheet([{
+                label: '商品打9折',
+                onClick: function (){
+                    product_option_confirm(product_id,1,0.9);
+                }
+            },{
+                label: '商品打7折',
+                onClick: function (){
+                    product_option_confirm(product_id,1,0.7);
+                }
+            },{
+                label: '商品半价',
+                onClick: function (){
+                    product_option_confirm(product_id,1,0.5);
+                }
+            },{
+                label: '添加商品数量1',
+                onClick: function (){
+                    product_option_confirm(product_id,2,1);
+                }
+            },{
+                label: '删除商品',
+                onClick: function (){
+                    product_option_confirm(product_id,3);
+                }
+            },{
+                label: '编辑商品',
+                onClick: function (){
+                    window.location.href = "release?product_id="+product_id;
+                }
+            },{
+                label: '查看商品详情',
+                onClick: function (){
+                    window.location.href = "product?product_id="+product_id;
+                }
+            }]);
+        });
+
+        $('[id^=order-]').click(function(){
+            var order_id = $(this).attr('id').replace("order-","");
+            if(!$(this).hasClass("order_deleted")){
+                $.weui.actionSheet([{
+                    label: '取消订单',
+                    onClick: function (){
+                        delete_order(order_id);
+                    }
+                }]);
+            }
+            else{
+                $.weui.topTips("该订单已被删除或取消");
+            }
+        });
+
+        $('[id^=orders_for_deal-]').click(function(){
+            var order_id = $(this).attr('id').replace("orders_for_deal-","");
+            var buyer_note = $(this).children('input:first').val();
+            if(!buyer_note){
+                buyer_note = "无";
+            }
+            $.weui.dialog({
+                title: '确认或回绝求购',
+                content: '买家备注：'+buyer_note,
+                buttons: [{
+                    label: '回绝',
+                    type: 'warning',
+                    onClick: function () {
+                        $('[id^=order_acception_form-]').hide();
+                        $('[id^=order_rejection_form-]').hide();
+                        $('#order_rejection_form-'+order_id).show();
+                        $('#order_rejection_form-'+order_id+' #seller_note').focus();
+                    }
+                }, {
+                    label: '接受',
+                    type: 'primary',
+                    onClick: function () {
+                        $('[id^=order_acception_form-]').hide();
+                        $('[id^=order_rejection_form-]').hide();
+                        $('#order_acception_form-'+order_id).show();
+                        $('#order_acception_form-'+order_id+' #seller_note').focus();
+                    }
+                }, {
+                    label: '取消',
+                    type: 'default',
+                    onClick: function () {
+                    }
+                }]
+            });
+        });
+
+        //地址提示功能的操作绑定
+        $('[id^=address_list-]').click(function(){
+            $('#address1').val($(this).html());
+            $('[id^=address_list-]').hide();
+        });
+        $('#address1').bind('input propertychange', function() {
+            var value = $(this).val();
+            if(value){
+                $.post('getAddresses', {}, function (data) {
+                    var num = 1;
+                    $('[id^=address_list-]').hide();
+                    var i;
+                    for(i in data){
+                        if(num <= 6 && data[i].indexOf(value) > -1){
+                            //$('#result').append(value);
+                            $('#address_list-'+num).show();
+                            $('#address_list-'+num).html(data[i]);
+                            num++;
+                        }
+                    }
+                });
+            }
+            else{
+                $('[id^=address_list-]').hide();
+            }
+        });
+
+        $('[id^=cancel_]').click(function(){
+            $('[id^=order_acception_form-]').hide();
+            $('[id^=order_rejection_form-]').hide();
+        });
+
+        $('[id^=order_confirmation_change-]').click(function(){
+            var order_id = $(this).attr('id').replace("order_confirmation_change-","");
+            $('#order_acception_form-'+order_id).hide();
+            $('#order_rejection_form-'+order_id).show();
+            $('#order_rejection_form-'+order_id+' #seller_note').val($('#order_acception_form-'+order_id+' #seller_note').val()).focus();
+
+        });
+
+        $('[id^=order_rejection_change-]').click(function(){
+            var order_id = $(this).attr('id').replace("order_rejection_change-","");
+            $('#order_rejection_form-'+order_id).hide();
+            $('#order_acception_form-'+order_id).show();
+            $('#order_acception_form-'+order_id+' #seller_note').val($('#order_acception_form-'+order_id+' #seller_note').val()).focus();
+
+        });
+
+        $('[id^=order_confirmation-]').click(function(){
+            var order_id = $(this).attr('id').replace("order_confirmation-","");
+            var real_exchange_time = $('#order_acception_form-'+order_id+' #real_exchange_time').val();
+            var seller_note = $('#order_acception_form-'+order_id+' #seller_note').val();
+            var payment_amount = $('#order_acception_form-'+order_id+' #payment_amount').val();
+            var address1 = $('#order_acception_form-'+order_id+' #address1').val();
+            var address2 = $('#order_acception_form-'+order_id+' #address2').val();
+            $.post("updateOrder",
+                    {
+                        order_id:order_id,
+                        real_exchange_time:real_exchange_time,
+                        seller_note:seller_note,
+                        payment_amount:payment_amount,
+                        address1:address1,
+                        address2:address2,
+                        is_accept:1
+                    },
+                    function(data,status){
+
+                        switch(data){
+                            case "-1":
+                                $.weui.alert('订单不存在');
+                                break;
+                            case "-2":
+                                $.weui.alert('订单已被取消');
+                                break;
+                            case "-3":
+                                $.weui.alert('信息不完整 '+payment_amount+' '+address1+' '+real_exchange_time);
+                                break;
+                            case "-4":
+                                $.weui.alert('更新订单失败');
+                                break;
+                            case "0":
+                                $('#orders_for_deal-'+order_id).hide();
+                                $.weui.alert("确认成功");//已同意
+                                $('#order_acception_form-'+order_id).hide();
+                                break;
+                            default:
+                        }
+                    });
+        });
+
+        $('[id^=order_rejection-]').click(function(){
+            var order_id = $(this).attr('id').replace("order_rejection-","");
+            var seller_note = $('#order_rejection_form-'+order_id+' #seller_note').val();
+            $.post("updateOrder",
+                    {
+                        order_id:order_id,
+                        seller_note:seller_note,
+                        is_accept:0
+                    },
+                    function(data,status){
+                        switch(data){
+                            case "-1":
+                                $.weui.topTips('订单不存在');
+                                break;
+                            case "-2":
+                                $.weui.topTips('订单已被取消');
+                                break;
+                            case "-4":
+                                $.weui.topTips('更新订单失败');
+                                break;
+                            case "0":
+                                $('#orders_for_deal-'+order_id).hide();
+                                $.weui.topTips("回绝成功");//已同意
+                                $('#order_rejection_form-'+order_id).hide();
+                                break;
+                            default:
+                        }
+                    });
+        });
+
+        $('#real_exchange_time').datetimepicker({
+            format: 'yyyy-mm-dd hh:ii',
+            autoclose:true
+        });
+
+    });
+
+    //type = 1（打折，num为折扣）,2（商品添加量，num为添加数量）,3（删除商品）
+    function product_option_confirm(product_id,type, num){
+        var product_name = $('#product_info-'+product_id+' .weui_media_title').text();
+        var product_price = $('#product_info-'+product_id+' strong:eq(1)').text().replace('元','').split("-");
+        var product_quantity = parseInt($.trim($('#product_info-'+product_id+' strong:eq(0)').text().replace('余量','')));
+        if(isNaN(product_quantity)){
+            product_quantity = 0;
+        }
+        var string = "";
+        if(type == 1){
+            var price = "";
+            if(product_price[1])
+                price = (product_price[0]*num).toFixed(2)+'-'+(product_price[1]*num).toFixed(2);
+            else
+                price = (product_price[0]*num).toFixed(2);
+            string = "您希望将价格调整为<strong>"+price+"</strong>元？";
+        }
+        else if(type == 2){
+            var new_num = num + product_quantity;
+            string = "您希望添加商品库存至<strong>"+new_num+"</strong>？";
+        }
+        else if(type == 3){
+            string = '您希望删除商品 <strong>'+product_name+'</strong>吗？<br>商品删除后不可恢复，相关订单都会被取消。<br>交易达成后自动调整商品数量，售罄后商品自动下架，不必人工删除。';
+        }
+        $.weui.confirm(string, {title: '确认'}, function(){
+            $.post("modifyProductOption",
+                    {
+                        user_id:"{$user_info['user_id']}",
+                        product_id:product_id,
+                        type:type,
+                        num:num
+                    },
+                    function(data,status){
+                        switch(data.code){
+                            case -1:
+                                $.weui.topTips('商品不存在');
+                                break;
+                            case -2:
+                            case -3:
+                            case -4:
+                                $.weui.topTips('参数错误');
+                                break;
+                            case 0:
+                                if(data.type == 1) {
+                                    window.location.href = window.location.href;
+                                }
+                                else if(data.type == 2){
+                                    window.location.href = window.location.href;
+                                }
+                                else if(data.type == 3){
+                                    $('#product_info-'+product_id).remove();
+                                    $('#product_option-'+product_id).remove();
+                                }
+                                break;
+                            default:
+                        }
+                    });
+        },function(){});
+
+    }
+
+    function delete_order(order_id){
+        $.weui.confirm('请注意：删除之后不可恢复！',{title: '确认取消订单'}, function(){
+            $.post("deleteOrder",
+                    {
+                        order_id:order_id,
+                        user_id:"{$user_info['user_id']}"
+                    },
+                    function(data,status){
+                        switch(data){
+                            case "-1":
+                            case "-2":
+                                $.weui.topTips('订单不存在');
+                                break;
+                            case "0":
+                                $.weui.topTips('删除成功');
+                                break;
+                            default:
+                        }
+                    });
+        },function(){});
+    }
+
+</script>
+<body ontouchstart="" style="height: 100%;border-color: #efeff4;">
+<header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+    <div class="am-header-left am-header-nav">
+        <a href="/market" class="">
+            <img class="am-header-icon-custom" src="../icon/index.png" alt=""/>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {$title}
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:history.go(0);" class="">
+            <img class="am-header-icon am-icon-bars" src="../icon/refresh.png"/>
+        </a>
+    </div>
+</header>
+<div class="weui_tab">
+    <div class="weui_navbar" style="margin-top: 50px;">
+        <div class="weui_navbar_item weui_bar_item_on" id="navbar-1">
+            已发布商品
+        </div>
+        <div class="weui_navbar_item" id="navbar-2">
+            我的求购
+        </div>
+        <div class="weui_navbar_item" id="navbar-3">
+            求购信息待处理
+        </div>
+    </div>
+    <div class="weui_tab_bd" id="nav-1">
+        <div class="weui_panel" style="margin-top: 50px;">
+            <div class="weui_panel_bd">
+                <volist name="products" id="vo">
+                    <a class="weui_cell" href="javascript:;" id="product_info-{$vo.product_id}">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>{$vo.name}</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <if condition="($vo['quantity_sold'] gt $vo['quantity']) OR ($vo['quantity_sold'] eq $vo['quantity'])">已售罄<else />余量<strong>{$vo['quantity'] - $vo['quantity_sold']}</strong></if> | <strong>{$vo.min_price}<if condition="$vo['min_price'] lt $vo['max_price']">-{$vo.max_price}</if></strong>元
+                        </div>
+                    </a>
+                </volist>
+            </div>
+        </div>
+    </div>
+    <div class="weui_tab_bd" id="nav-2">
+        <div class="weui_panel" style="margin-top: 100px;">
+            <div class="weui_panel_bd">
+                <div class="weui_cell weui_cell_switch">
+                    <div class="weui_cell_hd weui_cell_primary">只显示未删除且未被取消项目</div>
+                    <div class="weui_cell_ft">
+                        <input class="weui_switch" type="checkbox" id="deleted_exception" checked>
+                    </div>
+                </div>
+                <volist name="orders" id="vo">
+                    <div class="weui_media_box weui_media_text <if condition='($vo.status eq 3) OR ($vo.status eq 4) OR ($vo.status eq 2)'>order_deleted</if>" id="order-{$vo.product_id}">
+                        <h4 class="weui_media_title">{$vo.name}</h4>
+                        <p class="weui_media_desc">{$vo.time}发布，{$vo.latest_time}更新</p>
+                        <ul class="weui_media_info">
+                            <li class="weui_media_info_meta">数量{$vo['quantity']}</li>
+                            <li class="weui_media_info_meta weui_media_info_meta_extra">交易地点{$vo.content}-{$vo.address2}</li>
+                            <li class="weui_media_info_meta weui_media_info_meta_extra">
+                                <switch name="vo.status">
+                                    <case value="0">等待卖方确认</case>
+                                    <case value="1">卖方已同意</case>
+                                    <case value="2">商品已被删除</case>
+                                    <case value="3">交易已被卖方取消</case>
+                                    <case value="4">交易已被您取消</case>
+                                    <default />未知
+                                </switch>
+                            </li>
+                        </ul>
+                    </div>
+                </volist>
+            </div>
+        </div>
+    </div>
+    <div class="weui_tab_bd" id="nav-3">
+        <div class="weui_panel" style="margin-top: 100px;">
+            <div class="weui_panel_bd">
+                <div class="weui_cell weui_cell_switch">
+                    <div class="weui_cell_hd weui_cell_primary">具体房间和联系方式请确认后查看信息列表或邮箱。已处理或删除、取消的求购信息请在电脑上查看。</div>
+                </div>
+                <volist name="orders_for_deal" id="vo">
+                    <if condition="empty($vo['status'])">
+                        <div class="weui_media_box weui_media_text" id="orders_for_deal-{$vo.order_id}">
+                            <h4 class="weui_media_title">{$vo.name}</h4>
+                            <p class="weui_media_desc">{$vo.time}下单</p>
+                            <ul class="weui_media_info">
+                                <li class="weui_media_info_meta">求购数量{$vo.quantity}</li>
+                                <li class="weui_media_info_meta weui_media_info_meta_extra">交易地点{$vo.content}-{$vo.address2}</li>
+                                <li class="weui_media_info_meta weui_media_info_meta_extra">点击查看详情</li>
+                            </ul>
+                            <input type="hidden" value="{$vo.buyer_note}"/>
+                            <input type="hidden" value="{$vo.min_price}"/>
+                            <input type="hidden" value="{$vo.max_price}"/>
+                            <input type="hidden" value="{$vo.expect_exchange_time}"/>
+                            <input type="hidden" value="{$vo.content}"/>
+                            <input type="hidden" value="{$vo.address2}"/>
+                        </div>
+                        <div class="weui_cells weui_cells_form" id="order_acception_form-{$vo.order_id}">
+                            <div class="weui_cell">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <textarea id="seller_note" name="seller_note" class="weui_textarea" placeholder="请输入备注信息（选填）" rows="2"></textarea>
+                                    <div class="weui_textarea_counter"><span>限40字</span></div>
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">交易金额</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <if condition="$vo['min_price'] lt $vo['max_price']">
+                                        <input id="payment_amount" name="payment_amount" class="weui_input" type="tel" placeholder="您设定的价格为{$vo.min_price} - {$vo.max_price}元" value="{$vo.min_price}">
+                                    <else/>
+                                        <input id="payment_amount" name="payment_amount" class="weui_input" type="tel" placeholder="您设定的价格为{$vo.min_price}元" value="{$vo.min_price}">
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">交易时间</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input id="real_exchange_time" name="real_exchange_time" class="weui_input" type="text" placeholder="买家设定的时间为{$vo.expect_exchange_time}" value="{$vo.expect_exchange_time}" readonly >
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">交易楼栋</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input id="address1" name="address1" class="weui_input" type="text" placeholder="买家设定的楼栋为{$vo.content}" value="{$vo.content}">
+                                </div>
+                            </div>
+                            <div class="button_sp_area">
+                                <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-1">按钮</a>
+                                <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-2">按钮</a>
+                                <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-3">按钮</a>
+                                <a class="weui_btn weui_btn_mini weui_btn_primary" id="address_list-4">按钮</a>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd">
+                                    <label class="weui_label">交易房间</label>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input id="address2" name="address2" class="weui_input" type="text" placeholder="买家设定的房间为{$vo.address2}" value="{$vo.address2}">
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="weui_btn weui_btn_primary" id="order_confirmation-{$vo.order_id}">确认求购并提交信息</a>
+                            <a href="javascript:;" class="weui_btn weui_btn_default" id="order_confirmation_change-{$vo.order_id}">回绝求购</a>
+                            <a href="javascript:;" class="weui_btn weui_btn_warn" id="cancel_confirmation-{$vo.order_id}">取消</a>
+                        </div>
+                        <div class="weui_cells weui_cells_form" id="order_rejection_form-{$vo.order_id}">
+                            <div class="weui_cell">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <textarea id="seller_note" name="seller_note" class="weui_textarea" placeholder="请输入备注信息（选填）" rows="2"></textarea>
+                                    <div class="weui_textarea_counter"><span>限40字</span></div>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="weui_btn weui_btn_primary" id="order_rejection-{$vo.order_id}">回绝求购并提交信息</a>
+                            <a href="javascript:;" class="weui_btn weui_btn_default" id="order_rejection_change-{$vo.order_id}">确认求购</a>
+                            <a href="javascript:;" class="weui_btn weui_btn_warn" id="cancel_rejection-{$vo.order_id}">取消</a>
+                        </div>
+                    </if>
+                </volist>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
