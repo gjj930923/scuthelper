@@ -5,7 +5,7 @@ Use ThinkPHP 3.2, a PHP framework, with MySQL, HTML, CSS(Bootstrap 2.0) and jQue
 
 System functions overview
 
-Personal:
+#####Personal:
 
  + Sign in
  + Login
@@ -16,7 +16,7 @@ Personal:
  + Send feedbacks
  + Logout
  
- Products browsing:
+##### Products browsing:
  
  + Search products by categories
  + Q/A for products
@@ -26,17 +26,17 @@ Personal:
  + Manage favorites
  + Browse products information
  
- Products management:
+##### Products management:
  
  + Release/Modify/Delete products
 
-Recommendation:
+##### Recommendation:
 
 + According to users' search history
 + According to users' subscribes of categories
 + Release new products information to Weibo
 
-Administrator:
+##### Administrator:
 
 + Find transaction history
 + Get the list of new products released last day
